@@ -1,12 +1,18 @@
 /* content 布局部分 */
 
-#content {
+#content, .content-top-nav-inner {
     margin: 0 auto;
     text-align: center;
     max-width: 45em;
 }
 
 .content-top-nav {
+    width: 100%;
+    position: fixed;
+}
+
+.content-top-nav-inner {
+    margin-top: 2.2em;
     padding: 1.5em 1em;
     display: flex;
     justify-content: space-between;
