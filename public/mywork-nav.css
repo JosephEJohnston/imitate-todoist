@@ -12,6 +12,8 @@
     overflow: hidden;
     position: sticky;
     top: 0;
+    /* 考虑到 position 是 sticky，高还是定死 */
+    height: 3em;
     width: 100%;
 }
 

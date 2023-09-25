@@ -7,18 +7,20 @@
 }
 
 .content-top-nav {
-    padding: 0.5em 1.5em;
+    padding: 1em 1.5em;
     background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
-    top: 2.84em;
+    top: 3em;
 }
 
 .project-name {
+    padding: 0.3em;
     font-size: 1.2rem;
     font-weight: bold;
+    border-radius: 0.3em;
 }
 
 .project-top-btn-nav {
@@ -33,11 +35,17 @@
     justify-content: center;
     border: none;
     background-color: white;
+    transition: background-color .2s linear;
     font-size: 1rem;
     margin: 0 0.2em;
-    height: 3em;
+    height: 2.5em;
     min-width: 5em;
     color: rgb(102, 102, 102);
+    border-radius: 1em;
+}
+
+.project-top-button:hover, .project-name:hover {
+    background-color: rgb(245, 245, 245);
 }
 
 .project-top-btn-text {
