@@ -106,13 +106,14 @@
 }
 
 .td-btn-selected {
-    margin-right: 0.2em;
+    margin-right: 0.3em;
 }
 
 .td-text {
-    padding-top: 0.2em;
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    margin-top: 0.1em;
+    margin-bottom: 0.3em;
 }
 
 .td-right-btn {
