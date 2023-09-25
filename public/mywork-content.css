@@ -1,5 +1,9 @@
 /* content 布局部分 */
 
+#content {
+    /*overflow: hidden auto;*/
+}
+
 #content, .content-top-nav-inner {
     margin: 0 auto;
     text-align: center;
@@ -11,9 +15,11 @@
     background-color: white;
     display: flex;
     justify-content: space-between;
+    flex-wrap: nowrap;
     align-items: center;
     position: sticky;
     top: 3em;
+    overflow: hidden;
 }
 
 .project-name {
@@ -62,6 +68,7 @@
 .project-task {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .task-description {
@@ -128,21 +135,36 @@
 .add-task-btn {
     background-color: white;
     border: none;
-    margin-left: 2.5em;
+    margin-top: 0.2em;
+    margin-left: 2em;
     display: flex;
     width: 8em;
     justify-content: center;
 }
 
+.add-task-btn:hover {
+    .add-task-btn-icon {
+        background-color: hsl(4, 62%, 53%);
+        color: white;
+    }
+
+    .add-task-btn-text {
+        color: hsl(4, 62%, 53%);
+    }
+}
+
 .add-task-btn-icon {
+    border-radius: 1.5em;
+    height: 1.1em;
+    width: 1.1em;
     font-size: 1.2rem;
-    margin-left: -0.3em;
+    margin-left: -0.4em;
     color: rgb(226, 109, 98);
 }
 
 .add-task-btn-text {
     padding-left: 0.4em;
-    padding-top: 0.2em;
+    padding-top: 0.1em;
     color: rgb(102, 102, 102);
 }
 
