@@ -15,14 +15,17 @@ body {
     box-sizing: inherit;
 }
 
+/* nav 布局部分 */
 .top-nav {
-    padding: 0.5em 1.5em;
+    padding: 0.5em 0;
     display: flex;
     justify-content: space-between;
     --nav-bg-color: hsl(4, 62%, 53%);
     --nav-btn-update-color: hsl(5, 69%, 64%);
     --nav-font-color: white;
+    --nav-btn-bg-hover: rgb(176, 61, 50);
     background-color: var(--nav-bg-color);
+    overflow: hidden;
 }
 
 .top-nav-left, .top-nav-right {
@@ -31,17 +34,30 @@ body {
     align-items: center;
 }
 
-.nav-button, .nav-user-button {
+.nav-button {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--nav-bg-color);
     color: var(--nav-font-color);
     border: none;
-    height: 2em;
-    min-width: 2em;
+    height: 2.5em;
+    min-width: 3em;
     margin: 0 0.5em;
     border-radius: 0.5em;
+}
+
+.nav-button:hover {
+    background-color: var(--nav-btn-bg-hover);
+    cursor: pointer;
+}
+
+.nav-user-button {
+    padding: 0;
+}
+
+.nav-user-button:hover {
+    background-color: var(--nav-bg-color);
 }
 
 .nav-btn-icon {
@@ -52,8 +68,15 @@ body {
     justify-content: start;
     background-color: var(--nav-btn-update-color);
     color: var(--nav-font-color);
-    min-width: 15em;
+    min-width: 12vw;
     padding-left: 0.6em;
+    transition: background-color .2s linear,
+                color .2s linear;
+}
+
+.nav-btn-search:hover {
+    background-color: white;
+    color: darkgray;
 }
 
 .nav-btn-search-text {
@@ -67,8 +90,8 @@ body {
 }
 
 .nav-btn-update {
+    transition: background-color .2s linear;
     background-color: var(--nav-btn-update-color);
-    padding-right: 0;
 }
 
 .nav-text-update {
@@ -81,6 +104,20 @@ body {
     border-radius: 1em;
 }
 
-.nav-user-button {
-    padding: 0;
+@media (max-width: 750px) {
+    .nav-btn-search {
+        min-width: 6vw;
+    }
+
+    .nav-btn-search-text {
+        display: none;
+    }
+
+    .nav-text-update {
+        display: none;
+    }
 }
+
+/* content 布局部分 */
+
+
