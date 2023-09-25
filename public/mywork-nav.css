@@ -10,7 +10,7 @@
     --nav-btn-bg-hover: rgb(176, 61, 50);
     background-color: var(--nav-bg-color);
     overflow: hidden;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
 }
