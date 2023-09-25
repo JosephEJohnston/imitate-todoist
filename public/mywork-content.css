@@ -69,13 +69,12 @@
 .task-description {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding-left: 0.6em;
 }
 
 .td-left-container, .td-right-container {
     display: flex;
-    justify-content: center;
 }
 
 .td-right-container {
@@ -84,6 +83,7 @@
 
 .td-btn {
     font-size: 1rem;
+    height: 1.5em;
     width: 1.5em;
     background-color: white;
     border: none;
@@ -99,7 +99,7 @@
 }
 
 .td-text {
-    padding-top: 0.1em;
+    padding-top: 0.2em;
     font-weight: 400;
     font-size: 0.8rem;
 }
@@ -109,5 +109,14 @@
 }
 
 .task-comment {
+    font-size: 0.6rem;
+    text-align: left;
+    line-height: 3em;
+    color: rgb(102, 102, 102);
+}
 
+.task-line {
+    border: none;
+    border-top: 1px #ddd solid;
+    margin: 0.2em 2.5em;
 }
