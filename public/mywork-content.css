@@ -7,7 +7,7 @@
 }
 
 .content-top-nav {
-    padding: 1em 1.5em;
+    padding: 1em 2em;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -57,4 +57,57 @@
 
 .project-top-btn-last {
     min-width: 2em;
+}
+
+.task-container {
+    /*display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;*/
+}
+
+.task-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0.6em;
+}
+
+.td-left-container, .td-right-container {
+    display: flex;
+    justify-content: center;
+}
+
+.td-right-container {
+    margin-right: 0.35em;
+}
+
+.td-btn {
+    font-size: 1rem;
+    width: 1.5em;
+    background-color: white;
+    border: none;
+    color: rgb(102, 102, 102);
+}
+
+.td-btn-move {
+    /*visibility: hidden;*/
+}
+
+.td-btn-selected {
+    margin-right: 0.2em;
+}
+
+.td-text {
+    padding-top: 0.1em;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.td-right-btn {
+    margin: 0 0.2em;
+}
+
+.task-comment {
+
 }
