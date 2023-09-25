@@ -1,0 +1,86 @@
+:root {
+    box-sizing: border-box;
+    font-size: calc(0.5vw + 0.6em);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.top-nav {
+    padding: 0.5em 1.5em;
+    display: flex;
+    justify-content: space-between;
+    --nav-bg-color: hsl(4, 62%, 53%);
+    --nav-btn-update-color: hsl(5, 69%, 64%);
+    --nav-font-color: white;
+    background-color: var(--nav-bg-color);
+}
+
+.top-nav-left, .top-nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-button, .nav-user-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--nav-bg-color);
+    color: var(--nav-font-color);
+    border: none;
+    height: 2em;
+    min-width: 2em;
+    margin: 0 0.5em;
+    border-radius: 0.5em;
+}
+
+.nav-btn-icon {
+    font-size: 1rem;
+}
+
+.nav-btn-search {
+    justify-content: start;
+    background-color: var(--nav-btn-update-color);
+    color: var(--nav-font-color);
+    min-width: 15em;
+    padding-left: 0.6em;
+}
+
+.nav-btn-search-text {
+    font-size: 0.8rem;
+    margin-left: 0.5em;
+}
+
+.nav-btn-inner-text {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.nav-btn-update {
+    background-color: var(--nav-btn-update-color);
+    padding-right: 0;
+}
+
+.nav-text-update {
+    margin-bottom: 0.2em;
+}
+
+.user-img {
+    width: 2em;
+    height: 2em;
+    border-radius: 1em;
+}
+
+.nav-user-button {
+    padding: 0;
+}
