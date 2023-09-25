@@ -1,0 +1,50 @@
+/* content 布局部分 */
+
+#content {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 45em;
+}
+
+.content-top-nav {
+    padding: 1.5em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.project-top-btn-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-top-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background-color: white;
+    font-size: 1rem;
+    margin: 0 0.2em;
+    height: 3em;
+    min-width: 5em;
+    color: rgb(102, 102, 102);
+}
+
+.project-top-btn-text {
+    padding-bottom: 0.2em;
+    padding-left: 0.3em;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.project-top-btn-last {
+    min-width: 2em;
+}

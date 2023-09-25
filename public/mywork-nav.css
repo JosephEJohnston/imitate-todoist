@@ -1,23 +1,7 @@
-:root {
-    box-sizing: border-box;
-    font-size: calc(0.5vw + 0.6em);
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
 
 /* nav 布局部分 */
 .top-nav {
-    padding: 0.5em 0;
+    padding: 0.5em 1.5em;
     display: flex;
     justify-content: space-between;
     --nav-bg-color: hsl(4, 62%, 53%);
@@ -95,6 +79,7 @@ body {
 }
 
 .nav-text-update {
+    font-weight: bold;
     margin-bottom: 0.2em;
 }
 
@@ -117,7 +102,4 @@ body {
         display: none;
     }
 }
-
-/* content 布局部分 */
-
 
