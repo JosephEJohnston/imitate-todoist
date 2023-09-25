@@ -15,6 +15,7 @@
     /* 考虑到 position 是 sticky，高还是定死 */
     height: 3em;
     width: 100%;
+    z-index: 1000;
 }
 
 .top-nav-left, .top-nav-right {

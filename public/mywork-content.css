@@ -20,6 +20,7 @@
     position: sticky;
     top: 3em;
     overflow: hidden;
+    z-index: 1000;
 }
 
 .project-name {
@@ -107,6 +108,40 @@
 
 .td-btn-selected {
     margin-right: 0.3em;
+    position: relative;
+}
+
+.td-btn-selected:hover {
+    cursor: pointer;
+}
+
+.td-btn-selected:hover {
+    .td-btn-icon-check {
+        visibility: visible;
+    }
+
+    .td-btn-icon-not-check {
+        visibility: hidden;
+    }
+}
+
+.td-btn-icon-not-check, .td-btn-icon-check {
+    position: absolute;
+    top: 0.2em;
+    left: 0.3em;
+    transition: visibility 0s linear 0.2s;
+    z-index: 1;
+}
+
+.td-btn-icon-not-check {
+    visibility: visible;
+}
+
+.td-btn-icon-check {
+    position: absolute;
+    border-radius: 0.7em;
+    background-color: rgb(234, 234, 234);
+    visibility: hidden;
 }
 
 .td-text {
@@ -130,7 +165,7 @@
 .task-line {
     border: none;
     border-top: 1px #ddd solid;
-    margin: 0.2em 2.5em;
+    margin: 0.5em 2.5em;
 }
 
 .add-task-btn {
