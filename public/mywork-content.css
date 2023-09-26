@@ -11,7 +11,7 @@
 }
 
 .content-top-nav {
-    padding: 2em 2em;
+    padding: 1em 2em;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -75,28 +75,33 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-left: 0.6em;
 }
 
 .td-left-container, .td-right-container {
     display: flex;
 }
 
-.td-right-container {
-    margin-right: 0.35em;
-}
-
 .td-btn {
     font-size: 1rem;
     height: 1.5em;
-    width: 1.5em;
+    width: 1.8em;
     background-color: white;
+    border-radius: 0.5em;
     border: none;
     color: rgb(102, 102, 102);
+    transition: background-color .2s linear;
+}
+
+.td-btn:hover {
+    background-color: rgb(238, 238, 238);
 }
 
 .td-btn-move, .td-right-container {
     visibility: hidden;
+}
+
+.task-container {
+    margin: 0.5em 0.25em;
 }
 
 .task-container:hover {
@@ -127,8 +132,8 @@
 .td-btn-icon-not-check, .td-btn-icon-check {
     position: absolute;
     top: 0.2em;
-    left: 0.3em;
-    transition: visibility 0s linear 0.2s;
+    left: 0.4em;
+    transition: background-color .2s linear;
     z-index: 1;
 }
 
@@ -138,7 +143,6 @@
 
 .td-btn-icon-check {
     position: absolute;
-    border-radius: 0.7em;
     background-color: rgb(234, 234, 234);
     visibility: hidden;
 }
@@ -151,7 +155,7 @@
 }
 
 .td-right-btn {
-    margin: 0 0.2em;
+    margin: 0 0.05em;
 }
 
 .task-comment {
@@ -221,7 +225,6 @@
     padding: 0 1.75em;
     position: relative;
     transition: opacity .3s cubic-bezier(.4,0,.2,1);
-    /*width: calc(100% - 0.9rem);*/
     width: 100%;
 }
 
@@ -249,10 +252,14 @@
     justify-content: space-between;
     align-items: center;
     padding-right: 2em;
+    background-color: white;
+    position: sticky;
+    top: 7em;
 }
 
 .ath-nav {
-    margin-left: 0.8em;
+    margin-left: 0.4em;
+    position: relative;
 }
 
 .ath-control-icon {
@@ -267,5 +274,11 @@
 .ath-count {
     font-size: 0.6rem;
     font-weight: lighter;
+}
+
+.ath-btn-move {
+    position: absolute;
+    left: -1.5em;
+    visibility: hidden;
 }
 
