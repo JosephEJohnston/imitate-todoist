@@ -36,7 +36,7 @@
     align-items: center;
 }
 
-.project-top-button {
+.project-task-top-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,13 +45,12 @@
     transition: background-color .2s linear;
     font-size: 1rem;
     margin: 0 0.2em;
-    height: 2.5em;
-    min-width: 5em;
+    height: 2em;
     color: rgb(102, 102, 102);
     border-radius: 1em;
 }
 
-.project-top-button:hover, .project-name:hover {
+.project-task-top-button:hover, .project-name:hover {
     background-color: rgb(245, 245, 245);
 }
 
@@ -165,7 +164,7 @@
 .task-line {
     border: none;
     border-top: 1px #ddd solid;
-    margin: 0.5em 2.5em;
+    margin: 0.25em 2.5em;
 }
 
 .add-task-btn {
@@ -217,7 +216,7 @@
     font-size: 0.9rem;
     font-weight: 700;
     height: 2em;
-    margin: 2em 0;
+    margin: 1em 0;
     opacity: 0;
     padding: 0 1.75em;
     position: relative;
@@ -248,5 +247,25 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding-right: 2em;
+}
+
+.ath-nav {
+    margin-left: 0.8em;
+}
+
+.ath-control-icon {
+    font-size: 0.85rem;
+}
+
+.ath-text {
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.ath-count {
+    font-size: 0.6rem;
+    font-weight: lighter;
 }
 

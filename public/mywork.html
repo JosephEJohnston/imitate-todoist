@@ -55,19 +55,19 @@
             <div class="content-top-nav">
                 <div class="project-name">我的工作</div>
                 <div class="project-top-btn-nav">
-                    <button class="project-top-button">
+                    <button class="project-task-top-button">
                         <i class="bi bi-person-plus"></i>
                         <span class="project-top-btn-text">共享</span>
                     </button>
-                    <button class="project-top-button">
+                    <button class="project-task-top-button">
                         <i class="bi bi-sliders"></i>
                         <span class="project-top-btn-text">查看</span>
                     </button>
-                    <button class="project-top-button">
+                    <button class="project-task-top-button">
                         <i class="bi bi-chat-left"></i>
                         <span class="project-top-btn-text">评论</span>
                     </button>
-                    <button class="project-top-button project-top-btn-last">
+                    <button class="project-task-top-button project-top-btn-last">
                         <i class="bi bi-three-dots"></i>
                     </button>
                 </div>
@@ -157,22 +157,24 @@
                 <div class="">
                     <!-- 点击时可以修改“日常”，里面的图片其实是输入 -->
                     <div class="actual-task-header">
-                        <div>
+                        <div class="ath-nav">
+                            <!--
                             <button class="td-btn">
                                 <i class="bi bi-grid"></i>
-                            </button>
+                            </button>-->
                             <!-- 注意 hover 时出现的按钮 -->
                             <button class="td-btn">
-                                <i class="bi bi-caret-right"></i>
+                                <i class="bi bi-caret-right ath-control-icon"></i>
                                 <!--<i class="bi bi-caret-down"></i>-->
                             </button>
-                            <span>日常</span>
-                            <span>2</span>
+                            <span class="ath-text">日常</span>
+                            <span class="ath-count">2</span>
                         </div>
-                        <button class="td-btn">
+                        <button class="project-task-top-button project-top-btn-last">
                             <i class="bi bi-three-dots"></i>
                         </button>
                     </div>
+                    <hr class="task-line">
                     <div>
                         <button></button>
                         <!-- hover 时右边三个按钮 -->
