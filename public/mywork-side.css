@@ -1,0 +1,29 @@
+
+.side-part {
+    flex: 20%;
+    /*overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: height 0ms 400ms,
+                opacity 400ms 0ms;*/
+
+    padding: 2.5em 1.5em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 估计要用 js 实现 */
+.side-part-show-btn:hover {
+
+}
+
+.function-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-bottom {
+
+}

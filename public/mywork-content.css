@@ -1,17 +1,24 @@
 /* content 布局部分 */
 
 #content {
-    /*overflow: hidden auto;*/
+    display: flex;
 }
 
 #content, .content-top-nav-inner {
     margin: 0 auto;
-    text-align: center;
+}
+
+.main-part {
+    flex: 80%;
+}
+
+.main-part-inner {
     max-width: 55em;
+    margin: 0 auto;
 }
 
 .content-top-nav {
-    padding: 1em 2em;
+    padding: 2em 2em 1em;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -254,7 +261,7 @@
     padding-right: 2em;
     background-color: white;
     position: sticky;
-    top: 7em;
+    top: 8em;
     z-index: 900;
 }
 
