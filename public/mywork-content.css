@@ -220,7 +220,7 @@
     font-size: 0.9rem;
     font-weight: 700;
     height: 2em;
-    margin: 1em 0;
+    margin: 0.5em 0;
     opacity: 0;
     padding: 0 1.75em;
     position: relative;
@@ -255,7 +255,7 @@
     background-color: white;
     position: sticky;
     top: 7em;
-    z-index: 1000;
+    z-index: 900;
 }
 
 .ath-nav {
