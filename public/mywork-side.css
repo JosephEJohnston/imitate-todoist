@@ -132,6 +132,15 @@
     cursor: pointer;
 }
 
+.side-bottom {
+    border-radius: 0.5em;
+    transition: background-color 0.2s linear;
+}
+
+.side-bottom:hover {
+    background-color: rgb(238, 238, 238);
+}
+
 .side-bottom-btn {
     background-color: transparent;
     border: none;
