@@ -7,11 +7,11 @@
 #content, .content-top-nav-inner {
     margin: 0 auto;
     text-align: center;
-    max-width: 45em;
+    max-width: 55em;
 }
 
 .content-top-nav {
-    padding: 1em 2em;
+    padding: 2em 2em;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -202,5 +202,51 @@
     padding-left: 0.4em;
     padding-top: 0.1em;
     color: rgb(102, 102, 102);
+}
+
+.hover_action_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+    color: hsl(4, 62%, 53%);
+    border: none;
+
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 700;
+    height: 2em;
+    margin: 2em 0;
+    opacity: 0;
+    padding: 0 1.75em;
+    position: relative;
+    transition: opacity .3s cubic-bezier(.4,0,.2,1);
+    /*width: calc(100% - 0.9rem);*/
+    width: 100%;
+}
+
+.hover_action_button:focus,
+.hover_action_button:hover {
+    opacity: 1;
+}
+
+/* 画了一条线 */
+.hover_action_button:after,
+.hover_action_button:before {
+    background-color: hsl(4, 62%, 53%);
+    content: "";
+    display: block;
+    flex: 1 1 auto;
+    height: 1px;
+    opacity: .5;
+    margin: 0 1em;
+}
+
+
+.actual-task-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
