@@ -265,6 +265,12 @@
     z-index: 900;
 }
 
+.actual-task-header:hover {
+    .ath-btn-move {
+        opacity: 1;
+    }
+}
+
 .ath-nav {
     margin-left: 0.4em;
     position: relative;
@@ -286,7 +292,7 @@
 
 .ath-btn-move {
     position: absolute;
-    left: -1.5em;
-    visibility: hidden;
+    left: -2em;
+    opacity: 0;
 }
 
