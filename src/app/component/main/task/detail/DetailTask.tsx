@@ -3,7 +3,7 @@ import DetailTaskHeader from "@/app/component/main/task/detail/DetailTaskHeader"
 
 export default function DetailTask () {
     return (
-        <div className="">
+        <div>
             <DetailTaskHeader />
             <TaskContainer />
         </div>

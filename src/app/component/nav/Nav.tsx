@@ -1,10 +1,10 @@
+import SideControlButton from "@/app/component/nav/SideControlButton";
+
 export default function Nav() {
     return (
         <nav className="top-nav">
             <div className="top-nav-left">
-                <button className="nav-button side-part-show-btn">
-                    <i className="nav-btn-icon bi bi-list"></i>
-                </button>
+                <SideControlButton />
                 <button className="nav-button">
                     <i className="nav-btn-icon bi bi-house-door"></i>
                 </button>
@@ -32,7 +32,7 @@ export default function Nav() {
                     <i className="nav-btn-icon bi bi-bell"></i>
                 </button>
                 <button className="nav-button nav-user-button">
-                    <img className="user-img" src="../img.png" alt=""/>
+                    <img className="user-img" src="../../img.png" alt=""/>
                 </button>
             </div>
         </nav>
