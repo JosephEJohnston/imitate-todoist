@@ -23,7 +23,7 @@ export default function Index () {
                 </SetSidePartShowContext.Provider>
                 <div id="content">
                     <SidePart sidePartShow={isSidePartOpened} />
-                    <MainPart />
+                    <MainPart sidePartShow={isSidePartOpened} />
                 </div>
             </div>
         </>

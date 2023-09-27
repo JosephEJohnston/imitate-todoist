@@ -10,7 +10,7 @@ interface SidePartProps {
 export default function SidePart ({sidePartShow}: SidePartProps) {
 
     return (
-        <div className={`side-part ${sidePartShow ? `side-part-show` : `side-part-not-show`}`}>
+        <div className={`side-part ${sidePartShow ? `side-part-show` : ``}`}>
             <div>
                 <SidePersonMenu />
                 <SideProjectMenu />

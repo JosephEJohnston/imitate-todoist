@@ -1,26 +1,22 @@
 
 .side-part {
-    flex: 20%;
-    /*overflow: hidden;
-    height: 0;
-    opacity: 0;
-    transition: height 0ms 400ms,
-                opacity 400ms 0ms;*/
-
+    width: 20.5em;
     height: calc(100vh - 3em);
     padding: 2.2em 1em;
 
     background-color: rgb(250, 250, 250);
-}
+    position: fixed;
+    left: -21em;
 
-.side-part-show {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    transition: all 0.3s ease-in-out;
 }
 
-.side-part-not-show {
-    display: none;
+.side-part-show {
+    left: 0;
 }
 
 .side-part:hover {
