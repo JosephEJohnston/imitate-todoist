@@ -1,5 +1,5 @@
-import ProjectTaskHeader from "@/app/component/main/task/project/project-task-header";
-import TaskContainer from "@/app/component/main/task/task-container";
+import ProjectTaskHeader from "@/app/component/main/task/project/ProjectTaskHeader";
+import TaskContainer from "@/app/component/main/task/TaskContainer";
 
 export default function ProjectTask () {
     return (

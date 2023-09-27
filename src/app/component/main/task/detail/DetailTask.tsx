@@ -1,5 +1,5 @@
-import TaskContainer from "@/app/component/main/task/task-container";
-import DetailTaskHeader from "@/app/component/main/task/detail/detail-task-header";
+import TaskContainer from "@/app/component/main/task/TaskContainer";
+import DetailTaskHeader from "@/app/component/main/task/detail/DetailTaskHeader";
 
 export default function DetailTask () {
     return (

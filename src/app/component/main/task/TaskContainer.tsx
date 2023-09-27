@@ -1,4 +1,4 @@
-import Task from "@/app/component/main/task/task";
+import Task from "@/app/component/main/task/Task";
 
 export default function TaskContainer () {
     return (

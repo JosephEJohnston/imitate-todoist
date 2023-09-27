@@ -1,4 +1,4 @@
-import TaskFunctionNav from "@/app/component/main/task/task-function-nav";
+import TaskFunctionNav from "@/app/component/main/task/TaskFunctionNav";
 
 export default function Task () {
     return (

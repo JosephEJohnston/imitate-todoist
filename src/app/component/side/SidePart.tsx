@@ -1,5 +1,5 @@
-import SidePersonMenu from "@/app/component/side/person-menu/side-person-menu";
-import SideProjectMenu from "@/app/component/side/side-project-menu";
+import SidePersonMenu from "@/app/component/side/person-menu/SidePersonMenu";
+import SideProjectMenu from "@/app/component/side/project-menu/SideProjectMenu";
 
 export default function SidePart () {
     return (

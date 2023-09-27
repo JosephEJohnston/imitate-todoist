@@ -1,5 +1,5 @@
-import ProjectTask from "@/app/component/main/task/project/project-task";
-import DetailTask from "@/app/component/main/task/detail/detail-task";
+import ProjectTask from "@/app/component/main/task/project/ProjectTask";
+import DetailTask from "@/app/component/main/task/detail/DetailTask";
 
 export default function MainPart () {
     return (

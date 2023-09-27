@@ -3,9 +3,9 @@ import "./styles/nav.css"
 import "./styles/content.css"
 import "./styles/side.css"
 import "bootstrap-icons/font/bootstrap-icons.min.css";
-import Nav from "@/app/component/nav";
-import SidePart from "@/app/component/side/side-part";
-import MainPart from "@/app/component/main/main-part";
+import Nav from "@/app/component/Nav";
+import SidePart from "@/app/component/side/SidePart";
+import MainPart from "@/app/component/main/MainPart";
 
 export default function Home() {
     return (
