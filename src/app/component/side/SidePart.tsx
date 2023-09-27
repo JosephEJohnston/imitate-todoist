@@ -1,9 +1,16 @@
+'use client'
+
 import SidePersonMenu from "@/app/component/side/person-menu/SidePersonMenu";
 import SideProjectMenu from "@/app/component/side/project-menu/SideProjectMenu";
 
-export default function SidePart () {
+interface SidePartProps {
+    sidePartShow: boolean
+}
+
+export default function SidePart ({sidePartShow}: SidePartProps) {
+
     return (
-        <div className="side-part">
+        <div className={`side-part ${sidePartShow ? `side-part-show` : `side-part-not-show`}`}>
             <div>
                 <SidePersonMenu />
                 <SideProjectMenu />
