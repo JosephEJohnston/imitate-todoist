@@ -1,17 +1,12 @@
 import ProjectTask from "@/component/main/task/project/ProjectTask";
 import DetailTask from "@/component/main/task/detail/DetailTask";
+import React from "react";
 
-interface MainPartProps {
-    sidePartShow: boolean
-}
-
-export default function MainPart ({sidePartShow}: MainPartProps) {
+export default function MainPart () {
     return (
-        <div className={`main-part ${sidePartShow ? `main-with-side-active` : ``}`}>
-            <div className="main-part-inner">
-                <ProjectTask />
-                <DetailTask />
-            </div>
+        <div className="main-part-inner">
+            <ProjectTask />
+            <DetailTask />
         </div>
     );
 }
