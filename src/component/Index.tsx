@@ -4,7 +4,7 @@ import React, {createContext, useState} from "react";
 import Nav from "@/component/nav/Nav";
 import SidePart from "@/component/side/SidePart";
 import MainPart from "@/component/main/MainPart";
-import {SetSidePartShowContext} from "@/component/SetSidePartShowContext";
+import {SetSidePartShowContext} from "@/component/side/SetSidePartShowContext";
 
 
 export default function Index () {
