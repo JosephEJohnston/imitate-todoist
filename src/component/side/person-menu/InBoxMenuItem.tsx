@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function InBoxMenuItem () {
     return (
         <>
-            <Link href="/inbox">
+            <Link href="/dashboard/inbox">
                 <div className="function-btn-container">
 
                     <button className="f-btn">

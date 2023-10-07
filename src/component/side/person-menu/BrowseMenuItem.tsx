@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function BrowseMenuItem () {
     return (
         <>
-            <Link href="/browse">
+            <Link href="/dashboard/browse">
                 <div className="function-btn-container">
                     <button className="f-btn">
                         <i className="bi bi-calculator-fill f-btn-icon-scan"></i>

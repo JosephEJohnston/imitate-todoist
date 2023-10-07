@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function TagMenuItem () {
     return (
         <>
-            <Link href="/tag">
+            <Link href="/dashboard/tag">
                 <div className="function-btn-container">
                     <button className="f-btn">
                         <i className="bi bi-tags f-btn-icon-tag"></i>

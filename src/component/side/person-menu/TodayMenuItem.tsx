@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function TodayMenuItem () {
     return (
         <>
-            <Link href="/today">
+            <Link href="/dashboard/today">
                 <div className="function-btn-container">
                     <button className="f-btn">
                         <i className="bi bi-calendar-date f-btn-icon-today"></i>
