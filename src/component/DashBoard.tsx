@@ -1,3 +1,5 @@
+'use client'
+
 import React, {useState} from "react";
 import {SetSidePartShowContext} from "@/component/side/SetSidePartShowContext";
 import Nav from "@/component/nav/Nav";

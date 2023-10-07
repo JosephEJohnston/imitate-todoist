@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <>
             <DashBoard>
-                <MainPart/>
+                <MainPart />
             </DashBoard>
         </>
     )

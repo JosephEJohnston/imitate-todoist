@@ -1,4 +1,8 @@
-// import './globals.css'
+import '../styles/globals.css';
+import "../styles/nav.css"
+import "../styles/content.css"
+import "../styles/side.css"
+import "bootstrap-icons/font/bootstrap-icons.min.css";
 
 import type { Metadata } from 'next'
 import React from "react";
