@@ -1,6 +1,6 @@
 'use client'
 
-import React, {createContext, useState} from "react";
+import React, {useState} from "react";
 import Nav from "@/component/nav/Nav";
 import SidePart from "@/component/side/SidePart";
 import MainPart from "@/component/main/MainPart";
