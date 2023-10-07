@@ -3,11 +3,11 @@ import {SetSidePartShowContext} from "@/component/side/SetSidePartShowContext";
 import Nav from "@/component/nav/Nav";
 import SidePart from "@/component/side/SidePart";
 
-interface AppContainerProps {
+interface DashBoardProps {
     children: React.ReactNode
 }
 
-export default function AppContainer ({children}: AppContainerProps) {
+export default function DashBoard ({children}: DashBoardProps) {
     const [isSidePartOpened, setIsSidePartOpened] = useState(true)
 
     function sidePartToggle() {
