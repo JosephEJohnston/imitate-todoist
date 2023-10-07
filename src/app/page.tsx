@@ -1,11 +1,15 @@
 
 import RootLayout from "@/app/layout";
+import DashboardLayout from "@/app/dashboard/layout";
+import MainPart from "@/component/main/MainPart";
 
 export default function Home() {
     return (
         <>
             <RootLayout>
-                <div></div>
+                <DashboardLayout>
+                    <MainPart />
+                </DashboardLayout>
             </RootLayout>
         </>
     )
