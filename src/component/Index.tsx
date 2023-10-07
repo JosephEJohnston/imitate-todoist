@@ -1,11 +1,10 @@
 'use client'
 
-import Nav from "@/app/component/nav/Nav";
-import SidePart from "@/app/component/side/SidePart";
-import MainPart from "@/app/component/main/MainPart";
-import {createContext, useState} from "react";
-
-export const SetSidePartShowContext = createContext(() => {});
+import React, {createContext, useState} from "react";
+import Nav from "@/component/nav/Nav";
+import SidePart from "@/component/side/SidePart";
+import MainPart from "@/component/main/MainPart";
+import {SetSidePartShowContext} from "@/component/SetSidePartShowContext";
 
 
 export default function Index () {

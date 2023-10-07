@@ -1,4 +1,4 @@
-import ProjectMenuItem from "@/app/component/side/project-menu/ProjectMenuItem";
+import ProjectMenuItem from "@/component/side/project-menu/ProjectMenuItem";
 
 export default function SideProjectMenu () {
     return (

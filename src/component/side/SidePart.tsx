@@ -1,7 +1,8 @@
 'use client'
 
-import SidePersonMenu from "@/app/component/side/person-menu/SidePersonMenu";
-import SideProjectMenu from "@/app/component/side/project-menu/SideProjectMenu";
+
+import SidePersonMenu from "@/component/side/person-menu/SidePersonMenu";
+import SideProjectMenu from "@/component/side/project-menu/SideProjectMenu";
 
 interface SidePartProps {
     sidePartShow: boolean

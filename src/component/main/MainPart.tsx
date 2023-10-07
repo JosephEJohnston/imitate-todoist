@@ -1,5 +1,5 @@
-import ProjectTask from "@/app/component/main/task/project/ProjectTask";
-import DetailTask from "@/app/component/main/task/detail/DetailTask";
+import ProjectTask from "@/component/main/task/project/ProjectTask";
+import DetailTask from "@/component/main/task/detail/DetailTask";
 
 interface MainPartProps {
     sidePartShow: boolean
