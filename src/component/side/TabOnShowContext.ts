@@ -1,14 +1,13 @@
 import {Context, createContext, Dispatch, useContext} from "react";
 
 export interface OnShowStatus  {
-    onShowIndex: number;
-    indexCounter: number;
+    onShowIndex: string;
 }
 
 
 export interface OnShowAction {
     type: string,
-    index: number,
+    index: string,
 }
 
 /*
@@ -27,7 +26,7 @@ function setIndexOnShow(index: number) {
 }
 */
 
-export const TabOnShowContext: Context<OnShowStatus> = createContext({onShowIndex: 0, indexCounter: -1});
+export const TabOnShowContext: Context<OnShowStatus> = createContext({onShowIndex: '0'});
 export const TabOnShowDispatchContext: Context<Dispatch<OnShowAction>> = createContext((_: OnShowAction) => {});
 
 export function useTabOnShow() {
@@ -37,3 +36,4 @@ export function useTabOnShow() {
 export function useTabOnShowDispatch() {
     return useContext(TabOnShowDispatchContext);
 }
+

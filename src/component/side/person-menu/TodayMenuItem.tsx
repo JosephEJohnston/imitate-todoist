@@ -3,7 +3,7 @@ import MenuItem from "@/component/side/MenuItem";
 export default function TodayMenuItem () {
     return (
         <>
-            <MenuItem index={2} path={"/dashboard/today"}>
+            <MenuItem path={"/dashboard/today"}>
                 <button className="f-btn">
                     <i className="bi bi-calendar-date f-btn-icon-today"></i>
                     <span className="f-btn-text">今天</span>

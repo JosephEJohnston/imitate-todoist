@@ -17,8 +17,7 @@ interface SidePartProps {
 }
 
 const initialOnShow: OnShowStatus = {
-    onShowIndex: 0,
-    indexCounter: -1,
+    onShowIndex: '0',
 }
 
 
@@ -26,10 +25,6 @@ function onShowReducer(draft: Draft<OnShowStatus>, action: OnShowAction) {
     switch (action.type) {
         case 'changeOnShow': {
             draft.onShowIndex = action.index;
-            break;
-        }
-        case 'assignIndex': {
-            draft.indexCounter++;
             break;
         }
         default: {
