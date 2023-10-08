@@ -1,9 +1,9 @@
-import MainPart from "@/component/main/MainPart";
+import ProjectMainPart from "@/component/main/ProjectMainPart";
 
 export default function DashBoard () {
     return (
         <>
-            <MainPart />
+            <ProjectMainPart />
         </>
     );
 }

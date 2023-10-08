@@ -1,13 +1,24 @@
 import SideControlButton from "@/component/nav/SideControlButton";
+import Link from "next/link";
+
+function ToHomeButton() {
+    return (
+        <>
+            <Link href="/dashboard/today">
+                <button className="nav-button">
+                    <i className="nav-btn-icon bi bi-house-door"></i>
+                </button>
+            </Link>
+        </>
+    );
+}
 
 export default function Nav() {
     return (
         <nav className="top-nav">
             <div className="top-nav-left">
                 <SideControlButton />
-                <button className="nav-button">
-                    <i className="nav-btn-icon bi bi-house-door"></i>
-                </button>
+                <ToHomeButton />
                 <button className="nav-button nav-btn-search">
                     <i className="nav-btn-icon bi bi-search"></i>
                     <span className="nav-btn-search-text">搜索</span>
