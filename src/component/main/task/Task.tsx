@@ -13,7 +13,7 @@ export default function Task () {
 
     return (
         <>
-            <div className={showTaskList()}>
+            <div className={`task-container-parent ${showTaskList()}`}>
                 <div className="task-container">
                     <div className="task-description">
                         <div className="td-left-container">

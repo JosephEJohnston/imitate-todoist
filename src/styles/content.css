@@ -101,7 +101,9 @@
     border-radius: 0.5em;
     border: none;
     color: rgb(102, 102, 102);
-    transition: background-color .2s linear;
+    transition: background-color .2s linear,
+                transform .2s ease;
+
 }
 
 .td-btn:hover {
@@ -113,7 +115,11 @@
 }
 
 .icon-transform-270 {
-    transform: rotate(270deg);
+    transform: rotate(-90deg);
+}
+
+.task-container-parent {
+    height: auto;
 }
 
 .task-container {
@@ -127,8 +133,8 @@
 }
 
 .not-show {
-    height: 0;
-    visibility: hidden !important;
+    max-height: 0;
+    overflow: hidden;
 }
 
 .td-btn-selected {
