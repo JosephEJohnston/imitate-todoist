@@ -1,11 +1,15 @@
-import ProjectTask from "@/component/main/task/project/ProjectTask";
 import DetailTask from "@/component/main/task/detail/DetailTask";
 import React from "react";
+import ProjectTaskHeader from "@/component/main/header/ProjectTaskHeader";
+import TaskContainer from "@/component/main/task/TaskContainer";
 
 export default function ProjectMainPart () {
     return (
         <div className="main-part-inner">
-            <ProjectTask />
+            <ProjectTaskHeader />
+            <div className="project-task">
+                <TaskContainer />
+            </div>
             <DetailTask />
         </div>
     );
