@@ -32,7 +32,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.25em;
-    transition: background-color .2s linear;
+    transition: background-color .2s linear,
+                height .2s linear;
 }
 
 .function-btn-container:hover {
@@ -104,11 +105,26 @@
     border: none;
 
     opacity: 0;
-    transition: opacity .2s linear;
+    transition: opacity .2s linear,
+                transform .2s linear;
 }
 
 .f-btn-c-t-btn:hover {
     opacity: 1;
+}
+
+.btn-transform-90 {
+    transform: rotate(90deg);
+}
+
+.project-task-container {
+    transition: height .2s ease-in;
+    overflow: hidden;
+}
+
+.project-task-container-not-show {
+    padding: 0;
+
 }
 
 .f-btn-count-container {
