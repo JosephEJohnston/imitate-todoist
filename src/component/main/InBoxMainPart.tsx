@@ -1,4 +1,4 @@
-import DetailTask from "@/component/main/task/detail/DetailTask";
+import DetailTask from "@/component/main/task/DetailTask";
 import React from "react";
 import InBoxHeader from "@/component/main/header/InBoxHeader";
 import TaskContainer from "@/component/main/task/TaskContainer";

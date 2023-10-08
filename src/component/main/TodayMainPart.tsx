@@ -1,4 +1,4 @@
-import DetailTask from "@/component/main/task/detail/DetailTask";
+import DetailTask from "@/component/main/task/DetailTask";
 import React from "react";
 import TodayHeader from "@/component/main/header/TodayHeader";
 
