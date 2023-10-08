@@ -1,7 +1,7 @@
 'use client'
 
 import ProjectMenuItemList from "@/component/side/project-menu/ProjectMenuItemList";
-import React, {Dispatch, SetStateAction, useEffect, useRef, useState} from "react";
+import React, {Dispatch, SetStateAction, useCallback, useEffect, useRef, useState} from "react";
 
 interface ProjectMenuTitleProps {
     tabOnShow: boolean,
@@ -11,11 +11,21 @@ interface ProjectMenuTitleProps {
 function ProjectMenuTitle({tabOnShow, setTabOnShow}: ProjectMenuTitleProps) {
     let containerElement = useRef<HTMLElement>();
     let containerHeight = useRef<number>(0);
+    let setStyleHeight = useRef(() => {
+        if (containerElement.current === undefined) {
+            return
+        }
+
+        containerElement.current.style
+            .setProperty('height', containerHeight.current + 'px')
+    })
 
     useEffect(() => {
         containerElement.current = document.getElementsByClassName(
             'project-task-container')[0] as HTMLElement;
         containerHeight.current = containerElement.current.scrollHeight;
+        // 初始化设置一次高度
+        (setStyleHeight.current)();
     }, [])
 
     function handleOnClick(_: React.MouseEvent<HTMLButtonElement>) {
@@ -28,8 +38,7 @@ function ProjectMenuTitle({tabOnShow, setTabOnShow}: ProjectMenuTitleProps) {
             containerElement.current.style
                 .setProperty('height', 0 + 'px');
         } else {
-            containerElement.current.style
-                .setProperty('height', containerHeight.current + 'px');
+            (setStyleHeight.current)();
         }
     }
 
