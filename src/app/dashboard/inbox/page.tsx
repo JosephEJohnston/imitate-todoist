@@ -1,9 +1,9 @@
-import ProjectMainPart from "@/component/main/ProjectMainPart";
+import InBoxMainPart from "@/component/main/InBoxMainPart";
 
 export default function InBox () {
     return (
         <>
-            <ProjectMainPart />
+            <InBoxMainPart />
         </>
     );
 }
