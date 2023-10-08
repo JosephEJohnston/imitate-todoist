@@ -5,37 +5,20 @@ import SidePersonMenu from "@/component/side/person-menu/SidePersonMenu";
 import SideProjectMenu from "@/component/side/project-menu/SideProjectMenu";
 import {useImmerReducer} from "use-immer";
 import {
-    OnShowAction,
-    OnShowStatus,
+    onShowReducer,
     TabOnShowContext,
     TabOnShowDispatchContext
 } from "@/component/side/TabOnShowContext";
-import {Draft} from "immer";
 
 interface SidePartProps {
     sidePartShow: boolean
 }
 
-const initialOnShow: OnShowStatus = {
-    onShowIndex: '0',
-}
-
-
-function onShowReducer(draft: Draft<OnShowStatus>, action: OnShowAction) {
-    switch (action.type) {
-        case 'changeOnShow': {
-            draft.onShowIndex = action.index;
-            break;
-        }
-        default: {
-            throw Error('Unknown action: ' + action.type);
-        }
-    }
-}
-
 export default function SidePart ({sidePartShow}: SidePartProps) {
     const [onShow, dispatch] =
-        useImmerReducer(onShowReducer, initialOnShow)
+        useImmerReducer(onShowReducer, {
+            onShowIndex: '0',
+        })
 
     return (
         <>
