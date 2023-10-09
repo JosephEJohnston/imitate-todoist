@@ -31,16 +31,24 @@ export default function AddTaskForm () {
                 <hr className={`add-new-task-line`} />
                 <div className={`add-new-task-bottom-button-container`}>
                     <div>
-                        <button>
-                            <span>我的工作</span>
+                        <button className={`antb-btn antb-btn-left`}>
+                            <i className="bi bi-record-fill antb-btn-icon-dot"></i>
+                            <span className={`antb-btn-text`}>
+                                我的工作
+                            </span>
+                            <i className="bi bi-caret-down-fill antb-btn-icon-down"></i>
                         </button>
                     </div>
                     <div>
-                        <button>
-                            <span>取消</span>
+                        <button className={`antb-btn antb-btn-right`}>
+                            <span className={`antb-btn-text`}>
+                                取消
+                            </span>
                         </button>
-                        <button>
-                            <span>添加任务</span>
+                        <button className={`antb-btn antb-btn-right`}>
+                            <span className={`antb-btn-text`}>
+                                添加任务
+                            </span>
                         </button>
                     </div>
                 </div>

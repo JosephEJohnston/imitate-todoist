@@ -109,6 +109,41 @@
     justify-content: space-between;
 }
 
+.antb-btn {
+    background-color: transparent;
+    border: none;
+    height: 2.25em;
+    min-width: 5.5em;
+}
+
+.antb-btn-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.antb-btn-icon-dot {
+    margin-top: 0.15em;
+    font-size: 0.7rem;
+}
+
+.antb-btn-icon-down {
+    margin-top: 1em;
+    font-size: 0.2rem;
+}
+
+.antb-btn-right {
+    margin-left: 1em;
+}
+
+.antb-btn-text {
+    display: inline-block;
+    margin-bottom: 0.15em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-weight: bold;
+}
+
 .hover_action_button {
     display: flex;
     align-items: center;
