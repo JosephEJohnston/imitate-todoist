@@ -2,6 +2,7 @@
 
 import Task from "@/component/main/task/Task";
 import {useState} from "react";
+import AddTaskForm from "@/component/main/task/AddTaskForm";
 
 function AddTaskButton() {
     const [showButton, setShowButton] = useState(true);
@@ -23,14 +24,7 @@ function AddTaskButton() {
         } else {
             return (
                 <>
-                    <div className={`add-new-task-form`}>
-                        <div>
-                            <input className={`add-task-input`} type="text" placeholder="任务名称"/>
-                        </div>
-                        <div>
-                            <input className={`add-task-input`} type="text" placeholder="描述"/>
-                        </div>
-                    </div>
+                    <AddTaskForm />
                 </>
             )
         }
