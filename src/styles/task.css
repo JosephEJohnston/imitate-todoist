@@ -59,6 +59,28 @@
     border: none;
     outline: none;
     width: 100%;
+    margin: 0.25em 0;
+}
+
+.task-name-input {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.task-description {
+    font-weight: lighter;
+    margin-bottom: 0.7em;
+}
+
+.add-new-task-line {
+    border: none;
+    border-top: 1px rgb(234, 234, 234) solid;
+    margin: 0.5em -0.7em;
+}
+
+.add-new-task-bottom-button-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .hover_action_button {
