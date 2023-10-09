@@ -72,6 +72,32 @@
     margin-bottom: 0.7em;
 }
 
+.task-des-btn-container {
+    display: flex;
+    align-items: center;
+}
+
+.task-des-btn {
+    height: 2em;
+    margin-right: 0.7em;
+    background-color: transparent;
+    border: solid 1px rgb(234, 234, 234);
+    border-radius: 4px;
+}
+
+.task-des-btn:hover {
+    background-color: rgb(234, 234, 234);
+    cursor: pointer;
+}
+
+.task-des-btn-text {
+    padding-left: 0.5em;
+}
+
+.task-des-btn-text, .task-des-btn-icon {
+    color: rgb(102, 102, 102);
+}
+
 .add-new-task-line {
     border: none;
     border-top: 1px rgb(234, 234, 234) solid;

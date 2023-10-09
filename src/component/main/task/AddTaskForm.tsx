@@ -11,20 +11,20 @@ export default function AddTaskForm () {
                     <input className={`add-task-input task-description`}
                            type="text" placeholder="描述"/>
                 </div>
-                <div>
-                    <button>
-                        <i className="bi bi-calendar-event"></i>
-                        <span>截止日期</span>
+                <div className={`task-des-btn-container`}>
+                    <button className={`task-des-btn`}>
+                        <i className="bi bi-calendar-event task-des-btn-icon"></i>
+                        <span className={`task-des-btn-text`}>截止日期</span>
                     </button>
-                    <button>
-                        <i className="bi bi-flag"></i>
-                        <span>优先级</span>
+                    <button className={`task-des-btn`}>
+                        <i className="bi bi-flag task-des-btn-icon"></i>
+                        <span className={`task-des-btn-text`}>优先级</span>
                     </button>
-                    <button>
-                        <i className="bi bi-alarm"></i>
-                        <span>提醒</span>
+                    <button className={`task-des-btn`}>
+                        <i className="bi bi-alarm task-des-btn-icon"></i>
+                        <span className={`task-des-btn-text`}>提醒</span>
                     </button>
-                    <button>
+                    <button className={`task-des-btn`}>
                         <i className="bi bi-three-dots"></i>
                     </button>
                 </div>
