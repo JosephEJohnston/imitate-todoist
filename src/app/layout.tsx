@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import "../styles/nav.css"
 import "../styles/content.css"
+import "../styles/task.css"
 import "../styles/side.css"
 import "bootstrap-icons/font/bootstrap-icons.min.css";
 
