@@ -2,9 +2,10 @@ import {Dispatch, SetStateAction} from "react";
 
 interface AddTaskFromProps {
     doWhenCancel: Dispatch<SetStateAction<boolean>>;
+    needShadow: boolean,
 }
 
-export default function AddTaskForm ({doWhenCancel} : AddTaskFromProps) {
+export default function AddTaskForm ({doWhenCancel, needShadow = false} : AddTaskFromProps) {
 
     function handleCancelButton() {
         doWhenCancel(true);
@@ -12,7 +13,7 @@ export default function AddTaskForm ({doWhenCancel} : AddTaskFromProps) {
 
     return (
         <>
-            <div className={`add-new-task-form`}>
+            <div className={`add-new-task-form ${needShadow ? `add-new-task-form-with-shadow` : ``}`}>
                 <div>
                     <input className={`add-task-input task-name-input`}
                            type="text" placeholder="任务名称"/>

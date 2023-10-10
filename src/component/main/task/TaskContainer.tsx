@@ -24,7 +24,7 @@ function AddTaskButton() {
         } else {
             return (
                 <>
-                    <AddTaskForm doWhenCancel={setShowButton} />
+                    <AddTaskForm doWhenCancel={setShowButton} needShadow={false} />
                 </>
             )
         }

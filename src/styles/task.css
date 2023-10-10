@@ -56,6 +56,10 @@
     background-color: white;
 }
 
+.add-new-task-form-with-shadow {
+    box-shadow: 0 0 10px 5px rgba(0,0,0,.35);
+}
+
 .add-new-task-form:focus-within {
     border-color: rgb(184, 184, 184);
 }
