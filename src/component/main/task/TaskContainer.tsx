@@ -24,7 +24,7 @@ function AddTaskButton() {
         } else {
             return (
                 <>
-                    <AddTaskForm />
+                    <AddTaskForm setShowButton={setShowButton} />
                 </>
             )
         }

@@ -1,5 +1,15 @@
+import {Dispatch, SetStateAction} from "react";
 
-export default function AddTaskForm () {
+interface AddTaskFromProps {
+    setShowButton: Dispatch<SetStateAction<boolean>>;
+}
+
+export default function AddTaskForm ({setShowButton} : AddTaskFromProps) {
+
+    function handleCancelButton() {
+        setShowButton(true);
+    }
+
     return (
         <>
             <div className={`add-new-task-form`}>
@@ -33,19 +43,20 @@ export default function AddTaskForm () {
                     <div>
                         <button className={`antb-btn antb-btn-left`}>
                             <i className="bi bi-record-fill antb-btn-icon-dot"></i>
-                            <span className={`antb-btn-text`}>
+                            <span className={`antb-btn-text antb-bt-mywork`}>
                                 我的工作
                             </span>
                             <i className="bi bi-caret-down-fill antb-btn-icon-down"></i>
                         </button>
                     </div>
                     <div>
-                        <button className={`antb-btn antb-btn-right`}>
+                        <button className={`antb-btn antb-btn-right antb-btn-cancel`}
+                                onClick={handleCancelButton}>
                             <span className={`antb-btn-text`}>
                                 取消
                             </span>
                         </button>
-                        <button className={`antb-btn antb-btn-right`}>
+                        <button className={`antb-btn antb-btn-right antb-btn-add-task`}>
                             <span className={`antb-btn-text`}>
                                 添加任务
                             </span>
