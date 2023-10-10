@@ -1,13 +1,13 @@
 import {Dispatch, SetStateAction} from "react";
 
 interface AddTaskFromProps {
-    setShowButton: Dispatch<SetStateAction<boolean>>;
+    doWhenCancel: Dispatch<SetStateAction<boolean>>;
 }
 
-export default function AddTaskForm ({setShowButton} : AddTaskFromProps) {
+export default function AddTaskForm ({doWhenCancel} : AddTaskFromProps) {
 
     function handleCancelButton() {
-        setShowButton(true);
+        doWhenCancel(true);
     }
 
     return (

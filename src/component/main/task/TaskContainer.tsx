@@ -24,7 +24,7 @@ function AddTaskButton() {
         } else {
             return (
                 <>
-                    <AddTaskForm setShowButton={setShowButton} />
+                    <AddTaskForm doWhenCancel={setShowButton} />
                 </>
             )
         }

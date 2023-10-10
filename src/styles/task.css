@@ -53,6 +53,7 @@
     padding: 0.5em 0.7em;
     border: solid 1px rgb(234, 234, 234);
     border-radius: 10px;
+    background-color: white;
 }
 
 .add-new-task-form:focus-within {
