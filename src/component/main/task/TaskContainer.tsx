@@ -38,11 +38,56 @@ function AddTaskButton() {
 }
 
 function AddSection() {
+    const [showAddSectionButton, setShowAddSectionButton] = useState(true);
+
+    function handleClickButton() {
+        setShowAddSectionButton(!showAddSectionButton);
+    }
+
+    function handleCancel() {
+        setShowAddSectionButton(true);
+    }
+
+    function showAddSection() {
+        if (showAddSectionButton) {
+            return (
+                <>
+                    <div>
+                        <button className="hover_action_button"
+                                onClick={handleClickButton}>
+                            添加板块
+                        </button>
+                    </div>
+                </>
+            );
+        } else {
+            return (
+                <>
+                    <div className={`add-new-section-form`}>
+                        <input className={`add-new-section-name-input`} type="text"
+                               placeholder="命名这个板块"/>
+                        <div>
+                            <button className={`ans-btn ans-btn-add-section`}>
+                                <span className={`ans-btn-text-add`}>
+                                    添加板块
+                                </span>
+                            </button>
+                            <button className={`ans-btn ans-btn-add-cancel`}
+                                    onClick={handleCancel}>
+                                <span className={`ans-btn-text-cancel`}>
+                                    取消
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </>
+            );
+        }
+    }
+
     return (
         <>
-            <div>
-                <button className="hover_action_button">添加板块</button>
-            </div>
+            {showAddSection()}
         </>
     );
 }
