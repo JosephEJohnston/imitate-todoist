@@ -9,7 +9,7 @@ interface ProjectMenuItemProps {
 function ProjectMenuItem({id, name, count}: ProjectMenuItemProps) {
     return (
         <>
-            <MenuItem key={id} path={`/dashboard/project/${id}`} >
+            <MenuItem path={`/dashboard/project/${id}`} >
                 <button className="f-btn">
                     <i className="fb-dot bi bi-record-fill"></i>
                     <span className="f-btn-text">{name}</span>
@@ -48,7 +48,7 @@ export default function ProjectMenuItemList ({tabOnShow}: ProjectMenuItemListPro
             <div className={`project-task-container 
                     ${tabOnShow ? '' : 'project-task-container-not-show'}`}>
                 {initMenuItemList.map(item =>
-                    <ProjectMenuItem id={item.id} name={item.name} count={item.count}/>)}
+                    <ProjectMenuItem key={item.id} id={item.id} name={item.name} count={item.count}/>)}
             </div>
         </>
     );
