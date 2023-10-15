@@ -5,6 +5,8 @@ import Link from "next/link";
 import NavAddTaskButton from "@/component/nav/NavAddTaskButton";
 import FixPositionAddTaskForm from "@/component/nav/FixPositionAddTaskForm";
 import {useState} from "react";
+import NavEfficiencyButton from "@/component/nav/NavEfficiencyButton";
+import FixPositionEfficiencyBoard from "@/component/nav/FixPositionEfficiencyBoard";
 
 function ToHomeButton() {
     return (
@@ -20,6 +22,7 @@ function ToHomeButton() {
 
 export default function Nav() {
     const [showAddTaskForm, setShowAddTaskForm] = useState(false);
+    const [showEfficiencyBoard, setshowEfficiencyBoard] = useState(false);
 
     return (
         <>
@@ -38,10 +41,7 @@ export default function Nav() {
                         <span className="nav-btn-inner-text nav-text-update">升级到专业版</span>
                     </button>
                     <NavAddTaskButton show={showAddTaskForm} setShow={setShowAddTaskForm} />
-                    <button className="nav-button">
-                        <i className="nav-btn-icon bi bi-person-fill-up"></i>
-                        <span className="nav-btn-inner-text">0/5</span>
-                    </button>
+                    <NavEfficiencyButton show={showEfficiencyBoard} setShow={setshowEfficiencyBoard} />
                     <button className="nav-button">
                         <i className="nav-btn-icon bi bi-question-circle"></i>
                     </button>
@@ -54,6 +54,7 @@ export default function Nav() {
                 </div>
             </nav>
             <FixPositionAddTaskForm show={showAddTaskForm} setShow={setShowAddTaskForm} />
+            <FixPositionEfficiencyBoard show={showEfficiencyBoard} setShow={setshowEfficiencyBoard}  />
         </>
     );
 }

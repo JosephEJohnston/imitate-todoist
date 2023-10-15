@@ -13,7 +13,7 @@ export default function FixPositionAddTaskForm ({show, setShow}: FixPositionAddT
 
     return (
         <>
-            <div className={`fix-position-container ${show ? `` : `fix-position-not-show`}`}>
+            <div className={`fix-position-add-task-form-container ${show ? `` : `fix-position-not-show`}`}>
                 <AddTaskForm doWhenCancel={(s) => setShow(!s)}
                              needShadow={true}/>
             </div>
