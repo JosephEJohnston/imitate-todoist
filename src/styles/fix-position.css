@@ -22,7 +22,8 @@
     top: 2.5em;
     right: 5em;
     width: 20em;
-    height: 30em;
+    height: 32em;
+    padding: 1em 1.5em;
     background-color: white;
     border-radius: 5px;
     position: fixed;
