@@ -54,10 +54,12 @@ export default function FixPositionEfficiencyBoard (props: FixPositionEfficiency
 
     return (
         <>
-
             <div className={`fix-position-efficiency-board ${props.show ? `` : `fix-position-not-show`}`}>
-                { renderBoard() }
+                <div className={`fix-position-efficiency-board-inner`}>
+                    { renderBoard() }
+                </div>
             </div>
+
         </>
     );
 }
