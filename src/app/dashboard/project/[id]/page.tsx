@@ -5,7 +5,7 @@ export function generateStaticParams() {
 }
 
 export default function ProjectItemPage ({ params }: { params: { id: string } }) {
-    console.log(params.id);
+    // console.log(params.id);
 
     return (
         <>
