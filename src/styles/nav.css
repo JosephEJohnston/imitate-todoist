@@ -171,9 +171,11 @@
     justify-content: center;
     align-items: center;
     margin-top: 1em;
+    color: rgb(222, 86, 73);
 }
 
 .eff-board-more-text {
     font-size: 0.8rem;
     padding-left: 0.5em;
+    text-decoration: underline;
 }
