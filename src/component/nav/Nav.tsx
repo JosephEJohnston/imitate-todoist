@@ -22,7 +22,7 @@ function ToHomeButton() {
 
 export default function Nav() {
     const [showAddTaskForm, setShowAddTaskForm] = useState(false);
-    const [showEfficiencyBoard, setshowEfficiencyBoard] = useState(false);
+    const [showEfficiencyBoard, setShowEfficiencyBoard] = useState(false);
 
     return (
         <>
@@ -41,7 +41,7 @@ export default function Nav() {
                         <span className="nav-btn-inner-text nav-text-update">升级到专业版</span>
                     </button>
                     <NavAddTaskButton show={showAddTaskForm} setShow={setShowAddTaskForm} />
-                    <NavEfficiencyButton show={showEfficiencyBoard} setShow={setshowEfficiencyBoard} />
+                    <NavEfficiencyButton show={showEfficiencyBoard} setShow={setShowEfficiencyBoard} />
                     <button className="nav-button">
                         <i className="nav-btn-icon bi bi-question-circle"></i>
                     </button>
@@ -54,7 +54,7 @@ export default function Nav() {
                 </div>
             </nav>
             <FixPositionAddTaskForm show={showAddTaskForm} setShow={setShowAddTaskForm} />
-            <FixPositionEfficiencyBoard show={showEfficiencyBoard} setShow={setshowEfficiencyBoard}  />
+            <FixPositionEfficiencyBoard show={showEfficiencyBoard} setShow={setShowEfficiencyBoard}  />
         </>
     );
 }
