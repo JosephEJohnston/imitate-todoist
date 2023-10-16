@@ -17,7 +17,7 @@ export default function FixPositionEfficiencyBoard (props: FixPositionEfficiency
                             <span className={`eff-board-title-text`}>您的效率</span>
                         </div>
                         <div>
-                            <img className={`efficiency-img`} src="images/efficiency.jpg" alt="#"/>
+                            <img className={`efficiency-img`} src="/images/efficiency.jpg" alt="#"/>
                         </div>
                         <div className={`eff-board-desc-container`}>
                             <div className={`eff-board-desc-item eff-board-desc-title`}>
