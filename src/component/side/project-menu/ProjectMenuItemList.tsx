@@ -1,4 +1,7 @@
+'use client'
+
 import MenuItem from "@/component/side/MenuItem";
+import {useEffect, useState} from "react";
 
 interface ProjectMenuItemProps {
     id: number;
@@ -38,16 +41,49 @@ const initMenuItemList = [
     },
 ];
 
+interface MenuItem {
+    id: number;
+
+    name: string;
+
+    count: number;
+}
+
 interface ProjectMenuItemListProps {
     tabOnShow: boolean
 }
 
 export default function ProjectMenuItemList ({tabOnShow}: ProjectMenuItemListProps) {
+    const [menuList, setMenuList] = useState(initMenuItemList);
+
+    useEffect(() => {
+        const fetchData = async(): Promise<MenuItem[]> => {
+            const res = await fetch('http://localhost:3001/project')
+            // The return value is *not* serialized
+            // You can return Date, Map, Set, etc.
+
+            if (!res.ok) {
+                // This will activate the closest `error.js` Error Boundary
+                throw new Error('Failed to fetch data')
+            }
+
+            return res.json();
+        };
+
+        const data = fetchData();
+
+        data.then(res => {
+            console.log(res);
+            setMenuList(res);
+        })
+
+    }, [])
+
     return (
         <>
             <div className={`project-task-container 
                     ${tabOnShow ? '' : 'project-task-container-not-show'}`}>
-                {initMenuItemList.map(item =>
+                {menuList.map(item =>
                     <ProjectMenuItem key={item.id} id={item.id} name={item.name} count={item.count}/>)}
             </div>
         </>
