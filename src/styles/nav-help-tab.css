@@ -1,0 +1,5 @@
+
+.nav-help-tab-container {
+    display: flex;
+    justify-content: space-between;
+}

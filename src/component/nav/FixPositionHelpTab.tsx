@@ -1,5 +1,6 @@
 'use client'
 
+import "../../styles/nav-help-tab.css"
 import React, {Dispatch, SetStateAction} from "react";
 import OutsideClickHandler from "@/component/nav/OutsideClickHandler";
 
@@ -17,29 +18,39 @@ export default function FixPositionHelpTab (props: FixPositionHelpTabProps) {
                 <>
                     <OutsideClickHandler setStatusWhenClick={props.setShow}>
                         <div>
-                            <button></button>
+                            <button>
+                                <i className="bi bi-question-circle"></i>
+                            </button>
                             <span>帮助</span>
                         </div>
                         <div>
-                            <button></button>
+                            <button>
+                                <i className="bi bi-pen"></i>
+                            </button>
                             <span>灵感</span>
                         </div>
                         <div>
-                            <button></button>
+                            <button>
+                                <i className="bi bi-clipboard"></i>
+                            </button>
                             <span>模板</span>
                         </div>
-                        <div>
+                        <div className={`nav-help-tab-container`}>
                             <div>
-                                <button></button>
+                                <button>
+                                    <i className="bi bi-keyboard"></i>
+                                </button>
                                 <span>键盘快捷键</span>
                             </div>
                             <div>
                                 <span>?</span>
                             </div>
                         </div>
-                        <div>
+                        <div  className={`nav-help-tab-container`}>
                             <div>
-                                <button></button>
+                                <button>
+                                    <i className="bi bi-laptop"></i>
+                                </button>
                                 <span>指令菜单</span>
                             </div>
                             <div>
@@ -47,16 +58,22 @@ export default function FixPositionHelpTab (props: FixPositionHelpTabProps) {
                             </div>
                         </div>
                         <div>
-                            <button></button>
+                            <button>
+                                <i className="bi bi-journal-arrow-up"></i>
+                            </button>
                             <span>入门指南</span>
                         </div>
                         <div>
-                            <button></button>
+                            <button>
+                                <i className="bi bi-lightbulb"></i>
+                            </button>
                             <span>最新动态</span>
                         </div>
                         <hr/>
                         <div>
-                            <button></button>
+                            <button>
+                                <i className="bi bi-arrow-repeat"></i>
+                            </button>
                             <span>同步</span>
                         </div>
                         <div>
