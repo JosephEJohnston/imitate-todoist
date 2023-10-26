@@ -11,7 +11,7 @@ interface FixPositionEfficiencyBoardProps {
 export default function FixPositionEfficiencyBoard (props: FixPositionEfficiencyBoardProps) {
 
 
-    function renderBoard() {
+    function render() {
         if (props.show) {
             return (
                 <>
@@ -58,7 +58,7 @@ export default function FixPositionEfficiencyBoard (props: FixPositionEfficiency
                             fix-position-efficiency-board 
                             ${props.show ? `` : `fix-position-not-show`}`}>
                 <div className={`fix-position-inner efficiency-board-inner`}>
-                    { renderBoard() }
+                    { render() }
                 </div>
             </div>
 

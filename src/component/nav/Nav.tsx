@@ -25,6 +25,7 @@ function ToHomeButton() {
 export default function Nav() {
     const [showAddTaskForm, setShowAddTaskForm] = useState(false);
     const [showEfficiencyBoard, setShowEfficiencyBoard] = useState(false);
+    const [showHelpTab, setShowHelpTab] = useState(false);
 
     return (
         <>
@@ -44,7 +45,7 @@ export default function Nav() {
                     </button>
                     <NavAddTaskButton show={showAddTaskForm} setShow={setShowAddTaskForm} />
                     <NavEfficiencyButton show={showEfficiencyBoard} setShow={setShowEfficiencyBoard} />
-                    <NavHelpButton />
+                    <NavHelpButton show={showHelpTab} setShow={setShowHelpTab}  />
                     <button className="nav-button">
                         <i className="nav-btn-icon bi bi-bell"></i>
                     </button>
@@ -55,7 +56,7 @@ export default function Nav() {
             </nav>
             <FixPositionAddTaskForm show={showAddTaskForm} setShow={setShowAddTaskForm} />
             <FixPositionEfficiencyBoard show={showEfficiencyBoard} setShow={setShowEfficiencyBoard}  />
-            <FixPositionHelpTab />
+            <FixPositionHelpTab show={showHelpTab} setShow={setShowHelpTab} />
         </>
     );
 }
