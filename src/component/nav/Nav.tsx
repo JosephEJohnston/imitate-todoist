@@ -7,6 +7,8 @@ import FixPositionAddTaskForm from "@/component/nav/FixPositionAddTaskForm";
 import {useState} from "react";
 import NavEfficiencyButton from "@/component/nav/NavEfficiencyButton";
 import FixPositionEfficiencyBoard from "@/component/nav/FixPositionEfficiencyBoard";
+import NavHelpButton from "@/component/nav/NavHelpButton";
+import FixPositionHelpTab from "@/component/nav/FixPositionHelpTab";
 
 function ToHomeButton() {
     return (
@@ -42,9 +44,7 @@ export default function Nav() {
                     </button>
                     <NavAddTaskButton show={showAddTaskForm} setShow={setShowAddTaskForm} />
                     <NavEfficiencyButton show={showEfficiencyBoard} setShow={setShowEfficiencyBoard} />
-                    <button className="nav-button">
-                        <i className="nav-btn-icon bi bi-question-circle"></i>
-                    </button>
+                    <NavHelpButton />
                     <button className="nav-button">
                         <i className="nav-btn-icon bi bi-bell"></i>
                     </button>
@@ -55,6 +55,7 @@ export default function Nav() {
             </nav>
             <FixPositionAddTaskForm show={showAddTaskForm} setShow={setShowAddTaskForm} />
             <FixPositionEfficiencyBoard show={showEfficiencyBoard} setShow={setShowEfficiencyBoard}  />
+            <FixPositionHelpTab />
         </>
     );
 }

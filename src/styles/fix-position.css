@@ -18,15 +18,18 @@
     width: 0;
 }
 
-.fix-position-efficiency-board-inner {
+.fix-position-inner {
     /* 主要是为了阴影效果才给的 margin */
     margin: 0.5em;
-    width: 20em;
-    height: 32em;
     padding: 1em 1.5em;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 8px rgba(0,0,0, .12);
+}
+
+.efficiency-board-inner {
+    width: 20em;
+    height: 32em;
 }
 
 .fix-position-efficiency-board {
@@ -35,10 +38,14 @@
 
 .nav-fix-position-common {
     top: 0;
-    padding-top: 2em;
+    padding-top: 2.2em;
     position: fixed;
     z-index: 1002;
     overflow: hidden;
     transition: opacity .2s ease-in-out,
     box-shadow .5s;
+}
+
+.fix-position-help-tab {
+    right: 5em;
 }
