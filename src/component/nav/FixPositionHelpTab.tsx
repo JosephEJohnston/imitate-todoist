@@ -17,67 +17,67 @@ export default function FixPositionHelpTab (props: FixPositionHelpTabProps) {
             return (
                 <>
                     <OutsideClickHandler setStatusWhenClick={props.setShow}>
-                        <div>
-                            <button>
-                                <i className="bi bi-question-circle"></i>
+                        <div className={`nav-help-tab-container`}>
+                            <button className={`nav-ht-btn`}>
+                                <i className="bi bi-question-circle nav-ht-icon"></i>
                             </button>
-                            <span>帮助</span>
-                        </div>
-                        <div>
-                            <button>
-                                <i className="bi bi-pen"></i>
-                            </button>
-                            <span>灵感</span>
-                        </div>
-                        <div>
-                            <button>
-                                <i className="bi bi-clipboard"></i>
-                            </button>
-                            <span>模板</span>
+                            <span className={`nav-help-tab-text`}>帮助</span>
                         </div>
                         <div className={`nav-help-tab-container`}>
-                            <div>
-                                <button>
-                                    <i className="bi bi-keyboard"></i>
-                                </button>
-                                <span>键盘快捷键</span>
-                            </div>
-                            <div>
-                                <span>?</span>
-                            </div>
-                        </div>
-                        <div  className={`nav-help-tab-container`}>
-                            <div>
-                                <button>
-                                    <i className="bi bi-laptop"></i>
-                                </button>
-                                <span>指令菜单</span>
-                            </div>
-                            <div>
-                                <span>Ctrl K</span>
-                            </div>
-                        </div>
-                        <div>
-                            <button>
-                                <i className="bi bi-journal-arrow-up"></i>
+                            <button className={`nav-ht-btn`}>
+                                <i className="bi bi-pen nav-ht-icon"></i>
                             </button>
-                            <span>入门指南</span>
+                            <span className={`nav-help-tab-text`}>灵感</span>
                         </div>
-                        <div>
-                            <button>
-                                <i className="bi bi-lightbulb"></i>
+                        <div className={`nav-help-tab-container`}>
+                            <button className={`nav-ht-btn`}>
+                                <i className="bi bi-clipboard nav-ht-icon"></i>
                             </button>
-                            <span>最新动态</span>
+                            <span className={`nav-help-tab-text`}>模板</span>
+                        </div>
+                        <div className={`nav-help-tab-container nav-help-tab-layout`}>
+                            <div>
+                                <button className={`nav-ht-btn`}>
+                                    <i className="bi bi-keyboard nav-ht-icon"></i>
+                                </button>
+                                <span className={`nav-help-tab-text`}>键盘快捷键</span>
+                            </div>
+                            <div>
+                                <span className={`nav-help-tab-text nhtt-color nhtt-right`}>?</span>
+                            </div>
+                        </div>
+                        <div className={`nav-help-tab-container nav-help-tab-layout`}>
+                            <div>
+                                <button className={`nav-ht-btn`}>
+                                    <i className="bi bi-laptop nav-ht-icon"></i>
+                                </button>
+                                <span className={`nav-help-tab-text`}>指令菜单</span>
+                            </div>
+                            <div>
+                                <span className={`nav-help-tab-text nhtt-color nhtt-right`}>Ctrl K</span>
+                            </div>
+                        </div>
+                        <div className={`nav-help-tab-container`}>
+                            <button className={`nav-ht-btn`}>
+                                <i className="bi bi-journal-arrow-up nav-ht-icon"></i>
+                            </button>
+                            <span className={`nav-help-tab-text`}>入门指南</span>
+                        </div>
+                        <div className={`nav-help-tab-container`}>
+                            <button className={`nav-ht-btn`}>
+                                <i className="bi bi-lightbulb nav-ht-icon"></i>
+                            </button>
+                            <span className={`nav-help-tab-text`}>最新动态</span>
                         </div>
                         <hr/>
-                        <div>
-                            <button>
-                                <i className="bi bi-arrow-repeat"></i>
+                        <div className={``}>
+                            <button className={`nav-ht-btn`}>
+                                <i className="bi bi-arrow-repeat nav-ht-icon"></i>
                             </button>
-                            <span>同步</span>
+                            <span className={`nav-help-tab-text`}>同步</span>
                         </div>
-                        <div>
-                            <span>同步最新完成的任务：1分钟前</span>
+                        <div className={`nht-bottom-container`}>
+                            <span className={`nav-help-tab-text nhtt-color ml-change`}>同步最新完成的任务：1分钟前</span>
                         </div>
                     </OutsideClickHandler>
                 </>

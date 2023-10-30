@@ -1,5 +1,41 @@
 
-.nav-help-tab-container {
+.nav-help-tab-layout {
     display: flex;
     justify-content: space-between;
+}
+
+.nav-help-tab-container {
+    margin-bottom: 0.7em;
+}
+
+.nav-ht-btn {
+    border: none;
+    background-color: transparent;
+    width: 2em;
+    height: 2em;
+}
+
+.nav-ht-icon {
+    font-size: 1rem;
+}
+
+.nav-help-tab-text {
+    font-size: 0.85rem;
+    margin-left: 0.7em;
+}
+
+.nhtt-color {
+    color: rgb(102, 102, 102);
+}
+
+.nhtt-right {
+    font-size: 0.7rem;
+}
+
+.ml-change {
+    margin-left: 0.3em;
+}
+
+.nht-bottom-container {
+    margin-top: 0.2em;
 }
