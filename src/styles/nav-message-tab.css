@@ -1,0 +1,42 @@
+
+.message-tab-top-button-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mtt-left-btn-container {
+    background-color: rgb(245, 245, 245);
+    border-radius: 18px;
+    padding: 0.2em;
+    cursor: pointer;
+}
+
+.mtt-left-btn {
+    border: none;
+    border-radius: 20px;
+    width: 4em;
+    height: 2.5em;
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+}
+
+.mtt-left-btn-on-select {
+    background-color: white;
+}
+
+.mtt-left-btn-text {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.message-tab-content-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kite-img {
+    width: 300px;
+    height: 273px;
+
+}

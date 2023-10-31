@@ -9,6 +9,8 @@ import NavEfficiencyButton from "@/component/nav/NavEfficiencyButton";
 import FixPositionEfficiencyBoard from "@/component/nav/FixPositionEfficiencyBoard";
 import NavHelpButton from "@/component/nav/NavHelpButton";
 import FixPositionHelpTab from "@/component/nav/FixPositionHelpTab";
+import NavMessageTabButton from "@/component/nav/NavMessageTabButton";
+import FixPositionMessageTab from "@/component/nav/FixPositionMessageTab";
 
 function ToHomeButton() {
     return (
@@ -26,6 +28,7 @@ export default function Nav() {
     const [showAddTaskForm, setShowAddTaskForm] = useState(false);
     const [showEfficiencyBoard, setShowEfficiencyBoard] = useState(false);
     const [showHelpTab, setShowHelpTab] = useState(false);
+    const [showMessageTab, setShowMessageTab] = useState(false);
 
     return (
         <>
@@ -46,9 +49,7 @@ export default function Nav() {
                     <NavAddTaskButton show={showAddTaskForm} setShow={setShowAddTaskForm} />
                     <NavEfficiencyButton show={showEfficiencyBoard} setShow={setShowEfficiencyBoard} />
                     <NavHelpButton show={showHelpTab} setShow={setShowHelpTab}  />
-                    <button className="nav-button">
-                        <i className="nav-btn-icon bi bi-bell"></i>
-                    </button>
+                    <NavMessageTabButton show={showMessageTab} setShow={setShowMessageTab} />
                     <button className="nav-button nav-user-button">
                         <img className="user-img" src="/images/img.png" alt=""/>
                     </button>
@@ -57,6 +58,7 @@ export default function Nav() {
             <FixPositionAddTaskForm show={showAddTaskForm} setShow={setShowAddTaskForm} />
             <FixPositionEfficiencyBoard show={showEfficiencyBoard} setShow={setShowEfficiencyBoard}  />
             <FixPositionHelpTab show={showHelpTab} setShow={setShowHelpTab} />
+            <FixPositionMessageTab show={showMessageTab} setShow={setShowMessageTab} />
         </>
     );
 }
