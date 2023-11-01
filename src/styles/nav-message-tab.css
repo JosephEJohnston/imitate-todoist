@@ -29,6 +29,24 @@
     font-weight: bold;
 }
 
+.mtt-right-btn {
+    width: 3em;
+    height: 2.5em;
+    background-color: transparent;
+    border: none;
+    border-radius: 7px;
+    transition: background-color 0.2s linear;
+}
+
+.mtt-right-btn:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.mtt-right-icon {
+    font-size: 1.3rem;
+    color: rgb(161, 161, 161);
+}
+
 .message-tab-content-desc {
     display: flex;
     flex-direction: column;
@@ -38,5 +56,43 @@
 .kite-img {
     width: 300px;
     height: 273px;
+}
 
+.mtc-title {
+    font-weight: bold;
+}
+
+.mtc-content {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 0.87rem;
+    color: rgb(120, 120, 120);
+}
+
+.mtc-share-container {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.mtc-share-btn, .mtc-share-text {
+    color: rgb(221, 85, 72);
+}
+
+.mtc-share-btn {
+    width: 2em;
+    border: none;
+    background-color: transparent;
+}
+
+.mtc-share-icon {
+    font-size: 0.9rem;
+}
+
+.mtc-share-text {
+    font-size: 0.85rem;
+    margin-bottom: 0.2em;
+    text-decoration: underline;
 }

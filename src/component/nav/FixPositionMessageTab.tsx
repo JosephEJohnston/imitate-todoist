@@ -37,8 +37,8 @@ export default function FixPositionMessageTab (props: FixPositionMessageTabProps
                                 </button>
                             </div>
                             <div>
-                                <button>
-                                    <i className="bi bi-check2-square"></i>
+                                <button className={`mtt-right-btn`}>
+                                    <i className="bi bi-check2-square mtt-right-icon"></i>
                                 </button>
                             </div>
                         </div>
@@ -46,17 +46,17 @@ export default function FixPositionMessageTab (props: FixPositionMessageTabProps
                             <div>
                                 <img className={`kite-img`} src="/images/kite.jpg" alt=""/>
                             </div>
-                            <div>
+                            <div className={`mtc-title`}>
                                 保持同步
                             </div>
-                            <div>
+                            <div className={`mtc-content`}>
                                 您将会在此接收任何有关您共享项目变更的通知。
                             </div>
-                            <div>
-                                <button>
-                                    <i className="bi bi-question-circle"></i>
+                            <div className={`mtc-share-container`}>
+                                <button className={`mtc-share-btn`}>
+                                    <i className="bi bi-question-circle mtc-share-icon"></i>
                                 </button>
-                                <span>如何共享项目</span>
+                                <div className={`mtc-share-text`}>如何共享项目</div>
                             </div>
                         </div>
 
