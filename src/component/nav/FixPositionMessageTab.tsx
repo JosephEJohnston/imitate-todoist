@@ -20,6 +20,35 @@ export default function FixPositionMessageTab (props: FixPositionMessageTabProps
         setNoticeOrUnRead(false);
     }
 
+    function renderContentDesc() {
+        if (noticeOrUnRead) {
+            return (
+                <>
+                    <div className={`mtc-title`}>
+                        保持同步
+                    </div>
+                    <div className={`mtc-content`}>
+                        您将会在此接收任何有关您共享项目变更的通知。
+                    </div>
+                    <div className={`mtc-share-container`}>
+                        <button className={`mtc-share-btn`}>
+                            <i className="bi bi-question-circle mtc-share-icon"></i>
+                        </button>
+                        <div className={`mtc-share-text`}>如何共享项目</div>
+                    </div>
+                </>
+            )
+        } else {
+            return (
+                <>
+                    <div className={`mtc-content`}>
+                        干得漂亮！全部清空了。
+                    </div>
+                </>
+            )
+        }
+    }
+
     function render() {
         if (props.show) {
             return (
@@ -43,21 +72,10 @@ export default function FixPositionMessageTab (props: FixPositionMessageTabProps
                             </div>
                         </div>
                         <div className={`message-tab-content-desc`}>
-                            <div>
+                            <div className={`mtc-img-container`}>
                                 <img className={`kite-img`} src="/images/kite.jpg" alt=""/>
                             </div>
-                            <div className={`mtc-title`}>
-                                保持同步
-                            </div>
-                            <div className={`mtc-content`}>
-                                您将会在此接收任何有关您共享项目变更的通知。
-                            </div>
-                            <div className={`mtc-share-container`}>
-                                <button className={`mtc-share-btn`}>
-                                    <i className="bi bi-question-circle mtc-share-icon"></i>
-                                </button>
-                                <div className={`mtc-share-text`}>如何共享项目</div>
-                            </div>
+                            { renderContentDesc() }
                         </div>
 
                     </OutsideClickHandler>

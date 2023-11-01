@@ -53,6 +53,11 @@
     align-items: center;
 }
 
+.mtc-img-container {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
 .kite-img {
     width: 300px;
     height: 273px;
