@@ -65,7 +65,9 @@ export default function FixPositionUserTab (props: FixPositionUserTabProps) {
                             </div>
                             <div className={`nav-user-tab-each-container`}>
                                 <div>
-                                    <button></button>
+                                    <button>
+                                        <i className="bi bi-activity"></i>
+                                    </button>
                                     <span>活动日志</span>
                                 </div>
                                 <div>
@@ -74,7 +76,9 @@ export default function FixPositionUserTab (props: FixPositionUserTabProps) {
                             </div>
                             <div className={`nav-user-tab-each-container`}>
                                 <div>
-                                    <button></button>
+                                    <button>
+                                        <i className="bi bi-printer"></i>
+                                    </button>
                                     <span>打印</span>
                                 </div>
                                 <div>
@@ -83,20 +87,26 @@ export default function FixPositionUserTab (props: FixPositionUserTabProps) {
                             </div>
                             <div className={`nav-user-tab-each-container`}>
                                 <div>
-                                    <button></button>
+                                    <button>
+                                        <i className="bi bi-window-stack"></i>
+                                    </button>
                                     <span>关联应用</span>
                                 </div>
                             </div>
                             <hr className={`nutt-hr`}/>
                             <div className={`nav-user-tab-each-container`}>
                                 <div>
-                                    <button></button>
+                                    <button>
+                                        <i className="bi bi-star"></i>
+                                    </button>
                                     <span>升级到专业版</span>
                                 </div>
                             </div>
                             <div className={`nav-user-tab-each-container`}>
                                 <div>
-                                    <button></button>
+                                    <button>
+                                        <i className="bi bi-phone"></i>
+                                    </button>
                                     <span>下载应用</span>
                                 </div>
 
@@ -104,7 +114,9 @@ export default function FixPositionUserTab (props: FixPositionUserTabProps) {
                             <hr className={`nutt-hr`}/>
                             <div className={`nav-user-tab-each-container`}>
                                 <div>
-                                    <button></button>
+                                    <button>
+                                        <i className="bi bi-box-arrow-in-right"></i>
+                                    </button>
                                     <span>登出</span>
                                 </div>
                             </div>
