@@ -1,0 +1,34 @@
+
+.nav-user-tab-top-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nutt-user-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5em;
+}
+
+.nutt-user-name {
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.nutt-user-email {
+    font-size: 0.85rem;
+    color: rgb(139, 139, 139);
+}
+
+.nav-user-tab-each-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.nutt-hr {
+    margin: 0;
+}

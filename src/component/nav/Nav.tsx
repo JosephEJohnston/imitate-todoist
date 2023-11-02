@@ -12,6 +12,7 @@ import FixPositionHelpTab from "@/component/nav/FixPositionHelpTab";
 import NavMessageTabButton from "@/component/nav/NavMessageTabButton";
 import FixPositionMessageTab from "@/component/nav/FixPositionMessageTab";
 import NavUserTabButton from "@/component/nav/NavUserTabButton";
+import FixPositionUserTab from "@/component/nav/FixPositionUserTab";
 
 function ToHomeButton() {
     return (
@@ -59,6 +60,7 @@ export default function Nav() {
             <FixPositionEfficiencyBoard show={showEfficiencyBoard} setShow={setShowEfficiencyBoard}  />
             <FixPositionHelpTab show={showHelpTab} setShow={setShowHelpTab} />
             <FixPositionMessageTab show={showMessageTab} setShow={setShowMessageTab} />
+            <FixPositionUserTab show={showUserTab} setShow={setShowUserTab}  />
         </>
     );
 }
