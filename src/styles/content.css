@@ -1,22 +1,5 @@
 /* content 布局部分 */
 
-#content {
-    display: flex;
-}
-
-#content, .content-top-nav-inner {
-    margin: 0 auto;
-}
-
-.main-part {
-    flex: 80%;
-    transition: all 0.3s ease-in-out;
-}
-
-.main-with-side-active {
-    margin-left: 20.5em;
-}
-
 .main-part-inner {
     max-width: 55em;
     margin: 0 auto;

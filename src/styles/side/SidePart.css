@@ -1,0 +1,57 @@
+.side-part {
+    width: 20.5em;
+    height: 100vh;
+    padding: 2.2em 1em;
+
+    background-color: var(--white-bg-wolor);
+    position: fixed;
+    left: -21em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.side-part:hover {
+    .f-btn-c-t-btn {
+        opacity: 1;
+    }
+}
+
+.side-part-show {
+    left: 0;
+}
+
+.side-bottom {
+    border-radius: 0.5em;
+    transition: background-color 0.2s linear;
+}
+
+.side-bottom:hover {
+    background-color: var(--tab-hover-grey);
+}
+
+.side-bottom-btn {
+    background-color: transparent;
+    border: none;
+    height: 2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-bottom-btn-icon {
+    color: rgb(102, 102, 102);
+    font-size: 1.15rem;
+}
+
+.side-bottom-btn-text {
+    color: rgb(102, 102, 102);
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding-left: 0.4em;
+    padding-bottom: 0.2em;
+}

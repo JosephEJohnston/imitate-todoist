@@ -1,30 +1,4 @@
 
-.side-part {
-    width: 20.5em;
-    height: calc(100vh - 3em);
-    padding: 2.2em 1em;
-
-    background-color: rgb(250, 250, 250);
-    position: fixed;
-    left: -21em;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    transition: all 0.3s ease-in-out;
-}
-
-.side-part-show {
-    left: 0;
-}
-
-.side-part:hover {
-    .f-btn-c-t-btn {
-        opacity: 1;
-    }
-}
-
 .function-btn-container {
     background-color: transparent;
     border-radius: 0.5em;
@@ -148,34 +122,5 @@
     cursor: pointer;
 }
 
-.side-bottom {
-    border-radius: 0.5em;
-    transition: background-color 0.2s linear;
-}
 
-.side-bottom:hover {
-    background-color: rgb(238, 238, 238);
-}
 
-.side-bottom-btn {
-    background-color: transparent;
-    border: none;
-    height: 2em;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.side-bottom-btn-icon {
-    color: rgb(102, 102, 102);
-    font-size: 1.15rem;
-}
-
-.side-bottom-btn-text {
-    color: rgb(102, 102, 102);
-    font-size: 0.8rem;
-    font-weight: bold;
-    padding-left: 0.4em;
-    padding-bottom: 0.2em;
-}
