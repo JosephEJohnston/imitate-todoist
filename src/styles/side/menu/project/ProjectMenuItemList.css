@@ -1,7 +1,7 @@
 
 .fb-dot {
     font-size: 0.8rem;
-    color: rgb(184, 184, 184);
+    color: var(--dot-grey);
 }
 
 .project-task-container-not-show {
@@ -14,7 +14,7 @@
 
 .f-btn-count-container:hover {
     .f-btn-count-btn {
-        background-color: rgb(238, 238, 238);
+        background-color: var(--tab-hover-grey);
         opacity: 1;
     }
 }
