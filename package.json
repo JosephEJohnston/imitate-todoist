@@ -13,6 +13,7 @@
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
     "bootstrap-icons": "^1.11.1",
+    "autoprefixer": "10.4.16",
     "next": "13.5.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",

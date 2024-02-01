@@ -32,3 +32,20 @@
 .nutt-hr {
     margin: 0;
 }
+
+.nav-user-tab-btn {
+    border: none;
+    background-color: transparent;
+    width: 2em;
+    height: 2em;
+}
+
+.nav-user-tab-text {
+    font-size: 0.85rem;
+    margin-left: 0.7em;
+}
+
+.nav-user-tab-text-right {
+    color: rgb(102, 102, 102);
+    font-size: 0.7rem;
+}

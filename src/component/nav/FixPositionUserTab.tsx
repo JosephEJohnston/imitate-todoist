@@ -30,94 +30,91 @@ export default function FixPositionUserTab (props: FixPositionUserTabProps) {
                             </div>
                             <div className={`nav-user-tab-each-container`}>
                                 <div>
-                                    <button>
+                                    <button className={`nav-user-tab-btn`}>
                                         <i className="bi bi-nut"></i>
                                     </button>
-                                    <span>设置</span>
+                                    <span className={`nav-user-tab-text`}>设置</span>
                                 </div>
                                 <div>
-                                    <span>O 然后 S</span>
+                                    <span className={`nav-user-tab-text nav-user-tab-text-right`}>O 然后 S</span>
                                 </div>
                             </div>
                             <hr className={`nutt-hr`}/>
                             <div className={`nav-user-tab-each-container`}>
                                 <div>
-                                    <button>
+                                    <button className={`nav-user-tab-btn`}>
                                         <i className="bi bi-plus-lg"></i>
                                     </button>
-                                    <span>添加团队工作空间</span>
-                                </div>
-                                <div>
-                                    <button>测试</button>
+                                    <span className={`nav-user-tab-text`}>添加团队工作空间</span>
                                 </div>
                             </div>
                             <hr className={`nutt-hr`}/>
                             <div className={`nav-user-tab-each-container`}>
                                 <div>
-                                    <button>
+                                    <button className={`nav-user-tab-btn`}>
                                         <i className="bi bi-palette"></i>
                                     </button>
-                                    <span>主题</span>
+                                    <span className={`nav-user-tab-text`}>主题</span>
                                 </div>
                                 <div>
-                                    <span>O 然后 T</span>
+                                    <span className={`nav-user-tab-text nav-user-tab-text-right`}>O 然后 T</span>
                                 </div>
                             </div>
                             <div className={`nav-user-tab-each-container`}>
                                 <div>
-                                    <button>
+                                    <button className={`nav-user-tab-btn`}>
                                         <i className="bi bi-activity"></i>
                                     </button>
-                                    <span>活动日志</span>
+                                    <span className={`nav-user-tab-text`}>活动日志</span>
                                 </div>
                                 <div>
-                                    <span>O 然后 A</span>
+                                    <span className={`nav-user-tab-text nav-user-tab-text-right`}>O 然后 A</span>
                                 </div>
                             </div>
                             <div className={`nav-user-tab-each-container`}>
                                 <div>
-                                    <button>
+                                    <button className={`nav-user-tab-btn`}>
                                         <i className="bi bi-printer"></i>
                                     </button>
-                                    <span>打印</span>
+                                    <span className={`nav-user-tab-text`}>打印</span>
                                 </div>
                                 <div>
-                                    <span>Ctrl P</span>
+                                    <span className={`nav-user-tab-text nav-user-tab-text-right`}>Ctrl P</span>
                                 </div>
                             </div>
                             <div className={`nav-user-tab-each-container`}>
                                 <div>
-                                    <button>
+                                    <button className={`nav-user-tab-btn`}>
                                         <i className="bi bi-window-stack"></i>
                                     </button>
-                                    <span>关联应用</span>
+                                    <span className={`nav-user-tab-text`}>关联应用</span>
                                 </div>
                             </div>
                             <hr className={`nutt-hr`}/>
                             <div className={`nav-user-tab-each-container`}>
                                 <div>
-                                    <button>
+                                    <button className={`nav-user-tab-btn`}>
                                         <i className="bi bi-star"></i>
                                     </button>
-                                    <span>升级到专业版</span>
+                                    <span className={`nav-user-tab-text`}>升级到专业版</span>
                                 </div>
                             </div>
                             <div className={`nav-user-tab-each-container`}>
                                 <div>
-                                    <button>
+                                    <button className={`nav-user-tab-btn`}>
                                         <i className="bi bi-phone"></i>
                                     </button>
-                                    <span>下载应用</span>
+                                    <span className={`nav-user-tab-text`}>下载应用</span>
                                 </div>
 
                             </div>
                             <hr className={`nutt-hr`}/>
                             <div className={`nav-user-tab-each-container`}>
                                 <div>
-                                    <button>
+                                    <button className={`nav-user-tab-btn`}>
                                         <i className="bi bi-box-arrow-in-right"></i>
                                     </button>
-                                    <span>登出</span>
+                                    <span className={`nav-user-tab-text`}>登出</span>
                                 </div>
                             </div>
                             <hr className={`nutt-hr`}/>
