@@ -1,0 +1,61 @@
+.function-btn-container {
+    background-color: transparent;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25em;
+    transition: background-color .2s linear,
+    height .2s linear;
+}
+
+.function-btn-container:hover {
+    background-color: var(--tab-hover-grey);
+}
+
+.function-btn-container-on-show {
+    background-color: var(--tab-hover-grey);
+}
+
+.f-btn-icon-box {
+    color: dodgerblue;
+}
+
+.f-btn-icon-today {
+    color: green;
+}
+
+.f-btn-icon-scan {
+    color: purple;
+}
+
+.f-btn-icon-tag {
+    color: orange;
+}
+
+.f-btn {
+    background-color: transparent;
+    border: none;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-btn-text {
+    font-size: 0.9rem;
+    margin-left: 0.5em;
+    margin-bottom: 0.1em;
+}
+
+.f-btn-count {
+    font-size: 0.7rem;
+    font-weight: lighter;
+    padding-right: 0.75em;
+    color: rgb(102, 102, 102);
+}
+
+.project-task-container {
+    transition: height .2s ease-in;
+    overflow: hidden;
+}

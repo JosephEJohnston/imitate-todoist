@@ -1,14 +1,14 @@
 'use client'
 
 
-import SidePersonMenu from "@/component_old/side/person_menu/SidePersonMenu";
-import SideProjectMenu from "@/component_old/side/project_menu/SideProjectMenu";
+import SidePersonMenu from "@/component/side/menu/person/SidePersonMenu";
+import SideProjectMenu from "@/component/side/menu/project/SideProjectMenu";
 import {useImmerReducer} from "use-immer";
 import {
     onShowReducer,
     TabOnShowContext,
     TabOnShowDispatchContext
-} from "@/component_old/side/TabOnShowContext";
+} from "@/component/side/TabOnShowContext";
 
 interface SidePartProps {
     sidePartShow: boolean,

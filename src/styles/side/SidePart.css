@@ -44,12 +44,12 @@
 }
 
 .side-bottom-btn-icon {
-    color: rgb(102, 102, 102);
+    color: var(--btn-icon-text-grey);
     font-size: 1.15rem;
 }
 
 .side-bottom-btn-text {
-    color: rgb(102, 102, 102);
+    color: var(--btn-icon-text-grey);
     font-size: 0.8rem;
     font-weight: bold;
     padding-left: 0.4em;

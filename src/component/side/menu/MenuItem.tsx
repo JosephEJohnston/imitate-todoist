@@ -1,7 +1,7 @@
 import React, {useEffect, useId} from "react";
 import Link from "next/link";
-import {useTabOnShow, useTabOnShowDispatch} from "@/component_old/side/TabOnShowContext";
-import {usePathname, useRouter} from "next/navigation";
+import {useTabOnShow, useTabOnShowDispatch} from "@/component/side/TabOnShowContext";
+import {usePathname} from "next/navigation";
 
 interface MenuItemProps {
     path: string,

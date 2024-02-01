@@ -1,0 +1,31 @@
+
+.fb-dot {
+    font-size: 0.8rem;
+    color: rgb(184, 184, 184);
+}
+
+.project-task-container-not-show {
+    padding: 0;
+}
+
+.f-btn-count-container {
+    position: relative;
+}
+
+.f-btn-count-container:hover {
+    .f-btn-count-btn {
+        background-color: rgb(238, 238, 238);
+        opacity: 1;
+    }
+}
+
+.f-btn-count-btn {
+    background-color: transparent;
+    border: none;
+    top: -0.15em;
+    right: -0.05em;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+

@@ -1,4 +1,4 @@
-import MenuItem from "@/component_old/side/MenuItem";
+import MenuItem from "@/component/side/menu/MenuItem";
 
 export default function BrowseMenuItem () {
 

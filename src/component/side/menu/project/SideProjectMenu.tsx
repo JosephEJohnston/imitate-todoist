@@ -1,6 +1,6 @@
 'use client'
 
-import ProjectMenuItemList from "@/component_old/side/project_menu/ProjectMenuItemList";
+import ProjectMenuItemList from "@/component/side/menu/project/ProjectMenuItemList";
 import React, {Dispatch, SetStateAction, useCallback, useEffect, useRef, useState} from "react";
 
 interface ProjectMenuTitleProps {
