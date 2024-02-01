@@ -1,9 +1,5 @@
 /* content 布局部分 */
 
-.main-part-inner {
-    max-width: 55em;
-    margin: 0 auto;
-}
 
 .content-top-nav {
     padding: 2em 2em 1em;
@@ -60,11 +56,7 @@
     min-width: 2em;
 }
 
-.project-task {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
+
 
 .task-description {
     display: flex;

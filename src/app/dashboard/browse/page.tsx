@@ -1,4 +1,4 @@
-import ProjectMainPart from "@/component_old/main/ProjectMainPart";
+import ProjectMainPart from "@/component/main/ProjectMainPart";
 
 export default function Browse () {
     return (

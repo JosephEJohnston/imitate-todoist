@@ -1,4 +1,4 @@
-import ProjectMainPart from "@/component_old/main/ProjectMainPart";
+import ProjectMainPart from "@/component/main/ProjectMainPart";
 
 export function generateStaticParams() {
     return [{ id: '1' }, { id: '2' }, { id: '3' }]

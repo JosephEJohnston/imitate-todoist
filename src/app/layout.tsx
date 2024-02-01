@@ -4,7 +4,14 @@ import "../styles/task.css"
 import "../styles/section.css"
 import "bootstrap-icons/font/bootstrap-icons.min.css";
 import '@/styles/globals.css';
-import "@/styles/color.css"
+import "@/styles/color.css";
+import "@/styles/main/DashBoard.css"
+import "@/styles/main/MainPart.css"
+import "@/styles/side/SidePart.css"
+import "@/styles/side/menu/MenuItem.css"
+import "@/styles/side/menu/project/ProjectMenuItemList.css"
+import "@/styles/side/menu/project/SideProjectMenu.css"
+
 
 import type {Metadata} from 'next'
 import React from "react";

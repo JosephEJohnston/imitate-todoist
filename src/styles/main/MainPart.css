@@ -1,0 +1,10 @@
+.main-part-inner {
+    max-width: 55em;
+    margin: 0 auto;
+}
+
+.project-task {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}

@@ -1,7 +1,7 @@
 'use client'
 
 import {useContext} from "react";
-import {SetSidePartShowContext} from "@/component_old/side/SetSidePartShowContext";
+import {SetSidePartShowContext} from "@/component/side/SetSidePartShowContext";
 
 export default function SideControlButton () {
     const setSidePartShow = useContext(SetSidePartShowContext);

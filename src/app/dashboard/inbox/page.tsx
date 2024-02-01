@@ -1,4 +1,4 @@
-import InBoxMainPart from "@/component_old/main/InBoxMainPart";
+import InBoxMainPart from "@/component/main/InBoxMainPart";
 
 export default function InBox () {
     return (
