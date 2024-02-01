@@ -1,7 +1,7 @@
 
 import RootLayout from "@/app/layout";
 import DashboardLayout from "@/app/dashboard/layout";
-import ProjectMainPart from "@/component/main/ProjectMainPart";
+import ProjectMainPart from "@/component_old/main/ProjectMainPart";
 
 export default function Home() {
     return (

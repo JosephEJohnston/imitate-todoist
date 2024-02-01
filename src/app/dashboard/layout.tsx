@@ -1,5 +1,5 @@
 import React from "react";
-import DashBoard from "@/component/DashBoard";
+import DashBoard from "@/component_old/main/DashBoard";
 
 export default function DashboardLayout({children}: {
     children: React.ReactNode
