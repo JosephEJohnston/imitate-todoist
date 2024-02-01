@@ -118,10 +118,10 @@ export default function FixPositionUserTab (props: FixPositionUserTabProps) {
                                 </div>
                             </div>
                             <hr className={`nutt-hr`}/>
-                            <div>
-                                <span>V4559</span>
-                                <span> . </span>
-                                <span>最新动态</span>
+                            <div className={`nav-user-bottom-tab`}>
+                                <span className={`nav-user-tab-text`}>V4559</span>
+                                <span className={`nav-user-tab-text`}> . </span>
+                                <span className={`nav-user-tab-text`}>最新动态</span>
                             </div>
                         </div>
                     </OutsideClickHandler>
