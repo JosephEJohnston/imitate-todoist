@@ -5,7 +5,7 @@ export default function TagMenuItem () {
         <>
             <MenuItem path={"/dashboard/tag"}>
                 <button className="f-btn">
-                    <i className="bi bi-tags f-btn-icon-tag"></i>
+                    <i className="bi bi-tags"></i>
                     <span className="f-btn-text">过滤器&标签</span>
                 </button>
             </MenuItem>
