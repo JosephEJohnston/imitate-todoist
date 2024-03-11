@@ -7,6 +7,7 @@ import '@/styles/globals.css';
 import "@/styles/color.css";
 import "@/styles/main/DashBoard.css"
 import "@/styles/main/MainPart.css"
+import "@/styles/main/task/AddTaskForm.css"
 import "@/styles/side/SidePart.css"
 import "@/styles/side/menu/MenuItem.css"
 import "@/styles/side/menu/project/ProjectMenuItemList.css"

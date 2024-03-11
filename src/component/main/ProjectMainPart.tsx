@@ -1,6 +1,6 @@
 import DetailTask from "@/component_old/main/task/DetailTask";
 import React from "react";
-import ProjectTaskHeader from "@/component_old/main/header/ProjectTaskHeader";
+import ProjectTaskHeader from "@/component/main/header/ProjectTaskHeader";
 import TaskContainer from "@/component_old/main/task/TaskContainer";
 
 export default function ProjectMainPart () {

@@ -19,7 +19,7 @@ export default function AddTaskForm ({doWhenCancel, needShadow = false} : AddTas
                            type="text" placeholder="任务名称"/>
                 </div>
                 <div>
-                    <input className={`add-task-input task-description`}
+                    <input className={`add-task-input add-task-description`}
                            type="text" placeholder="描述"/>
                 </div>
                 <div className={`task-des-btn-container`}>

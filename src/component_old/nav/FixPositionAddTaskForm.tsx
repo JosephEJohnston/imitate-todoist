@@ -2,7 +2,7 @@
 
 import "../../styles/fix-position.css"
 import React, {Dispatch, SetStateAction} from "react";
-import AddTaskForm from "@/component_old/main/task/AddTaskForm";
+import AddTaskForm from "@/component/main/task/AddTaskForm";
 
 interface FixPositionAddTaskProps {
     show: boolean,

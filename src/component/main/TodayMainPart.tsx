@@ -1,6 +1,6 @@
 import DetailTask from "@/component_old/main/task/DetailTask";
 import React from "react";
-import TodayHeader from "@/component_old/main/header/TodayHeader";
+import TodayHeader from "@/component/main/header/TodayHeader";
 
 export default function TodayMainPart () {
     return (

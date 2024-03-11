@@ -2,7 +2,7 @@
 
 import Task from "@/component_old/main/task/Task";
 import {useState} from "react";
-import AddTaskForm from "@/component_old/main/task/AddTaskForm";
+import AddTaskForm from "@/component/main/task/AddTaskForm";
 
 function AddTaskButton() {
     const [showButton, setShowButton] = useState(true);

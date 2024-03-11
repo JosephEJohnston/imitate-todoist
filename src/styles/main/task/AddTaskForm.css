@@ -1,0 +1,132 @@
+
+.add-new-task-form {
+    margin: 0.1em 2.5em;
+    padding: 0.5em 0.7em;
+    border: solid 1px var(--add-new-task-form-white);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.add-new-task-form:focus-within {
+    border-color: rgb(184, 184, 184);
+}
+
+
+.add-new-task-form-with-shadow {
+    box-shadow: 0 0 10px 5px var(--add-new-task-form-box-shadow);
+}
+
+.add-task-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    margin: 0.25em 0;
+}
+
+.task-name-input {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.add-task-description {
+    font-weight: lighter;
+    margin-bottom: 0.7em;
+}
+
+
+.task-des-btn-container {
+    display: flex;
+    align-items: center;
+}
+
+.task-des-btn {
+    height: 2em;
+    margin-right: 0.7em;
+    background-color: transparent;
+    border: solid 1px rgb(234, 234, 234);
+    border-radius: 4px;
+}
+
+.task-des-btn:hover {
+    background-color: rgb(234, 234, 234);
+    cursor: pointer;
+}
+
+.task-des-btn-text {
+    padding-left: 0.5em;
+}
+
+.task-des-btn-text, .task-des-btn-icon {
+    color: rgb(102, 102, 102);
+}
+
+.add-new-task-line {
+    border: none;
+    border-top: 1px rgb(234, 234, 234) solid;
+    margin: 0.5em -0.7em;
+}
+
+.add-new-task-bottom-button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.antb-btn {
+    background-color: transparent;
+    border: none;
+    height: 2.25em;
+    min-width: 5.5em;
+}
+
+.antb-btn-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.antb-btn-left:hover {
+    background-color: rgb(234, 234, 234);
+    border-radius: 5px;
+}
+
+.antb-btn-icon-dot {
+    margin-top: 0.15em;
+    font-size: 0.7rem;
+}
+
+.antb-btn-icon-down {
+    margin-top: 1em;
+    font-size: 0.2rem;
+}
+
+.antb-btn-right {
+    margin-left: 1em;
+}
+
+.antb-btn-text {
+    display: inline-block;
+    margin-bottom: 0.15em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-weight: bold;
+
+}
+
+.antb-btn-icon-dot, .antb-btn-icon-down, .antb-bt-mywork {
+    color: rgb(102, 102, 102);
+}
+
+.antb-btn-cancel {
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+}
+
+.antb-btn-cancel:hover {
+    background-color: rgb(234, 234, 234);
+}
+
+.antb-btn-add-task {
+    background-color: rgb(237, 165, 158);
+    color: white;
+    border-radius: 5px;
+}
